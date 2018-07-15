@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="题目大意有$n$个正整数$a_i$，统计有多少个四元组满足$gcd(a_i,a_j,a_k,a_l)=1$。 解析令$f[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的倍数的四元组个数，$g[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的四元组个数。 $f[i]$比较好求，令$X$为$a_i$中i的倍数的个数，则: f[i]=C_{X}^{4}接下来用$f[i]$求">
+<meta name="description" content="题目大意有$n$个正整数$a_i$，统计有多少个四元组满足$gcd(a_i,a_j,a_k,a_l)$=1。 解析令$f[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的倍数的四元组个数，$g[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的四元组个数。 $f[i]$比较好求，令$X$为$a_i$中i的倍数的个数，则: f[i]=C_{X}^{4}接下来用$f[i]$求">
 <meta property="og:type" content="article">
 <meta property="og:title" content="「luogu2714」四元组统计">
 <meta property="og:url" content="http://yoursite.com/2018/07/15/「luogu2714」四元组统计/index.html">
 <meta property="og:site_name" content="Cupcake">
-<meta property="og:description" content="题目大意有$n$个正整数$a_i$，统计有多少个四元组满足$gcd(a_i,a_j,a_k,a_l)=1$。 解析令$f[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的倍数的四元组个数，$g[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的四元组个数。 $f[i]$比较好求，令$X$为$a_i$中i的倍数的个数，则: f[i]=C_{X}^{4}接下来用$f[i]$求">
+<meta property="og:description" content="题目大意有$n$个正整数$a_i$，统计有多少个四元组满足$gcd(a_i,a_j,a_k,a_l)$=1。 解析令$f[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的倍数的四元组个数，$g[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的四元组个数。 $f[i]$比较好求，令$X$为$a_i$中i的倍数的个数，则: f[i]=C_{X}^{4}接下来用$f[i]$求">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-15T14:55:53.925Z">
+<meta property="og:updated_time" content="2018-07-15T15:08:58.666Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「luogu2714」四元组统计">
-<meta name="twitter:description" content="题目大意有$n$个正整数$a_i$，统计有多少个四元组满足$gcd(a_i,a_j,a_k,a_l)=1$。 解析令$f[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的倍数的四元组个数，$g[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的四元组个数。 $f[i]$比较好求，令$X$为$a_i$中i的倍数的个数，则: f[i]=C_{X}^{4}接下来用$f[i]$求">
+<meta name="twitter:description" content="题目大意有$n$个正整数$a_i$，统计有多少个四元组满足$gcd(a_i,a_j,a_k,a_l)$=1。 解析令$f[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的倍数的四元组个数，$g[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的四元组个数。 $f[i]$比较好求，令$X$为$a_i$中i的倍数的个数，则: f[i]=C_{X}^{4}接下来用$f[i]$求">
 
 
 
@@ -299,7 +299,7 @@
       
 
       
-        <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>有$n$个正整数$a_i$，统计有多少个四元组满足$gcd(a_i,a_j,a_k,a_l)=1$。</p>
+        <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>有$n$个正整数$a_i$，统计有多少个四元组满足$gcd(a_i,a_j,a_k,a_l)$=1。</p>
 <h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>令$f[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的倍数的四元组个数，$g[i]$为$gcd(a_i,a_j,a_k,a_l)$为$i$的四元组个数。</p>
 <p>$f[i]$比较好求，令$X$为$a_i$中i的倍数的个数，则:</p>
 <script type="math/tex; mode=display">f[i]=C_{X}^{4}</script><p>接下来用$f[i]$求出$g[i]$:</p>
