@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="题目大意给定一棵$n$节点树，q次询问，每次询问钦定$m_i$个点，树上每个节点被离其最近的钦定点管辖，问每个钦定点要管辖多少个节点。 *数据范围 $n&amp;lt;=300000, q&amp;lt;=300000,m_1+m_2+…+m_q&amp;lt;=300000$解析注意数据范围，不难看出要构出虚树。 先求出虚树上的每个点被哪个点管辖，用两遍dp实现。先用儿子向上更新，再用父亲向下更新(顺序不能颠倒，否则无">
+<meta name="description" content="题目大意给定一棵$n$节点树，q次询问，每次询问钦定$m_i$个点，树上每个节点被离其最近的钦定点管辖，问每个钦定点要管辖多少个节点。 *数据范围$n&amp;lt;=300000, q&amp;lt;=300000,m_1+m_2+...+m_q&amp;lt;=300000$ 解析注意数据范围，不难看出要构出虚树。 先求出虚树上的每个点被哪个点管辖，用两遍dp实现。先用儿子向上更新，再用父亲向下更新(顺序不能颠倒，否">
 <meta property="og:type" content="article">
 <meta property="og:title" content="「BZOJ3572」[HNOI2014]世界树">
 <meta property="og:url" content="http://yoursite.com/2018/03/08/「BZOJ3572」-HNOI2014-世界树/index.html">
 <meta property="og:site_name" content="Cupcake">
-<meta property="og:description" content="题目大意给定一棵$n$节点树，q次询问，每次询问钦定$m_i$个点，树上每个节点被离其最近的钦定点管辖，问每个钦定点要管辖多少个节点。 *数据范围 $n&amp;lt;=300000, q&amp;lt;=300000,m_1+m_2+…+m_q&amp;lt;=300000$解析注意数据范围，不难看出要构出虚树。 先求出虚树上的每个点被哪个点管辖，用两遍dp实现。先用儿子向上更新，再用父亲向下更新(顺序不能颠倒，否则无">
+<meta property="og:description" content="题目大意给定一棵$n$节点树，q次询问，每次询问钦定$m_i$个点，树上每个节点被离其最近的钦定点管辖，问每个钦定点要管辖多少个节点。 *数据范围$n&amp;lt;=300000, q&amp;lt;=300000,m_1+m_2+...+m_q&amp;lt;=300000$ 解析注意数据范围，不难看出要构出虚树。 先求出虚树上的每个点被哪个点管辖，用两遍dp实现。先用儿子向上更新，再用父亲向下更新(顺序不能颠倒，否">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-16T15:09:03.979Z">
+<meta property="og:updated_time" content="2018-07-16T15:11:45.704Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「BZOJ3572」[HNOI2014]世界树">
-<meta name="twitter:description" content="题目大意给定一棵$n$节点树，q次询问，每次询问钦定$m_i$个点，树上每个节点被离其最近的钦定点管辖，问每个钦定点要管辖多少个节点。 *数据范围 $n&amp;lt;=300000, q&amp;lt;=300000,m_1+m_2+…+m_q&amp;lt;=300000$解析注意数据范围，不难看出要构出虚树。 先求出虚树上的每个点被哪个点管辖，用两遍dp实现。先用儿子向上更新，再用父亲向下更新(顺序不能颠倒，否则无">
+<meta name="twitter:description" content="题目大意给定一棵$n$节点树，q次询问，每次询问钦定$m_i$个点，树上每个节点被离其最近的钦定点管辖，问每个钦定点要管辖多少个节点。 *数据范围$n&amp;lt;=300000, q&amp;lt;=300000,m_1+m_2+...+m_q&amp;lt;=300000$ 解析注意数据范围，不难看出要构出虚树。 先求出虚树上的每个点被哪个点管辖，用两遍dp实现。先用儿子向上更新，再用父亲向下更新(顺序不能颠倒，否">
 
 
 
@@ -300,7 +300,8 @@
 
       
         <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给定一棵$n$节点树，q次询问，每次询问钦定$m_i$个点，树上每个节点被离其最近的钦定点管辖，问每个钦定点要管辖多少个节点。</p>
-<h3 id="数据范围-n-lt-300000-q-lt-300000-m-1-m-2-…-m-q-lt-300000"><a href="#数据范围-n-lt-300000-q-lt-300000-m-1-m-2-…-m-q-lt-300000" class="headerlink" title="*数据范围 $n&lt;=300000, q&lt;=300000,m_1+m_2+…+m_q&lt;=300000$"></a>*数据范围 $n&lt;=300000, q&lt;=300000,m_1+m_2+…+m_q&lt;=300000$</h3><h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>注意数据范围，不难看出要构出虚树。</p>
+<h3 id="数据范围"><a href="#数据范围" class="headerlink" title="*数据范围"></a>*数据范围</h3><pre><code>$n&lt;=300000, q&lt;=300000,m_1+m_2+...+m_q&lt;=300000$
+</code></pre><h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>注意数据范围，不难看出要构出虚树。</p>
 <p>先求出虚树上的每个点被哪个点管辖，用两遍dp实现。先用儿子向上更新，再用父亲向下更新(顺序不能颠倒，否则无法处理管辖兄弟的情况)。</p>
 <p>然后考虑虚树边上的点，分两种情况：<br>    (1)若虚树边两端被同一个点管辖，那么这条边上的所有点都被这个点管辖。<br>    (2)否则虚树边上存在一个分界点，分界点两侧分别被那边的点管辖，我们可以倍增地找到这个分界点。</p>
 <p>统计答案即可。</p>
@@ -338,8 +339,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/08/【BZOJ3262】陌上花开/" rel="prev" title="【BZOJ3262】陌上花开">
-                【BZOJ3262】陌上花开 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/08/「POJ3352」Road Construction/" rel="prev" title="「POJ3352」Road Construction">
+                「POJ3352」Road Construction <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -417,7 +418,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -454,7 +455,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目大意"><span class="nav-number">1.</span> <span class="nav-text">题目大意</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据范围-n-lt-300000-q-lt-300000-m-1-m-2-…-m-q-lt-300000"><span class="nav-number">1.1.</span> <span class="nav-text">*数据范围 $n&lt;=300000, q&lt;=300000,m_1+m_2+…+m_q&lt;=300000$</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目大意"><span class="nav-number">1.</span> <span class="nav-text">题目大意</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据范围"><span class="nav-number">1.1.</span> <span class="nav-text">*数据范围</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
