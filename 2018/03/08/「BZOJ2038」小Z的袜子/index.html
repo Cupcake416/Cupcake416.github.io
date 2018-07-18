@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="题目大意解析代码12">
+<meta name="description" content="题目大意给一个长度为$N$的颜色序列，从1到$N$编号。问在区间[L,R]中任选两个元素，这两个元素颜色相同的概率。有多次询问。 解析想要得到答案，我们需要快速计算出区间内每种颜色的数量。 而当我们知道[L,R]的答案时，可以快速计算出[L-1,R],[L+1,R],[L,R-1],[L,R+1]的答案，这正是莫队算法擅长处理的情况！ 莫队算法的步骤如下：(1)把序列分为$\sqrt{n}$个块，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="」[ZJOI2006]书架">
-<meta property="og:url" content="http://yoursite.com/2018/07/18/」-ZJOI2006-书架/index.html">
+<meta property="og:title" content="「BZOJ2038」小Z的袜子">
+<meta property="og:url" content="http://yoursite.com/2018/03/08/「BZOJ2038」小Z的袜子/index.html">
 <meta property="og:site_name" content="Cupcake">
-<meta property="og:description" content="题目大意解析代码12">
+<meta property="og:description" content="题目大意给一个长度为$N$的颜色序列，从1到$N$编号。问在区间[L,R]中任选两个元素，这两个元素颜色相同的概率。有多次询问。 解析想要得到答案，我们需要快速计算出区间内每种颜色的数量。 而当我们知道[L,R]的答案时，可以快速计算出[L-1,R],[L+1,R],[L,R-1],[L,R+1]的答案，这正是莫队算法擅长处理的情况！ 莫队算法的步骤如下：(1)把序列分为$\sqrt{n}$个块，">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-18T15:55:09.173Z">
+<meta property="og:updated_time" content="2018-07-18T15:23:27.722Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="」[ZJOI2006]书架">
-<meta name="twitter:description" content="题目大意解析代码12">
+<meta name="twitter:title" content="「BZOJ2038」小Z的袜子">
+<meta name="twitter:description" content="题目大意给一个长度为$N$的颜色序列，从1到$N$编号。问在区间[L,R]中任选两个元素，这两个元素颜色相同的概率。有多次询问。 解析想要得到答案，我们需要快速计算出区间内每种颜色的数量。 而当我们知道[L,R]的答案时，可以快速计算出[L-1,R],[L+1,R],[L,R-1],[L,R+1]的答案，这正是莫队算法擅长处理的情况！ 莫队算法的步骤如下：(1)把序列分为$\sqrt{n}$个块，">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/18/」-ZJOI2006-书架/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/08/「BZOJ2038」小Z的袜子/"/>
 
 
 
 
 
-  <title>」[ZJOI2006]书架 | Cupcake</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>「BZOJ2038」小Z的袜子 | Cupcake</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/18/」-ZJOI2006-书架/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/08/「BZOJ2038」小Z的袜子/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Cupcake">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">」[ZJOI2006]书架</h1>
+          <h1 class="post-title" itemprop="name headline">「BZOJ2038」小Z的袜子</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-18T22:26:37+08:00">
-                2018-07-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-08T16:43:33+08:00">
+                2018-03-08
               </time>
             
 
@@ -299,7 +299,11 @@
       
 
       
-        <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给一个长度为$N$的颜色序列，从1到$N$编号。问在区间[L,R]中任选两个元素，这两个元素颜色相同的概率。有多次询问。</p>
+<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>想要得到答案，我们需要快速计算出区间内每种颜色的数量。</p>
+<p>而当我们知道[L,R]的答案时，可以快速计算出[L-1,R],[L+1,R],[L,R-1],[L,R+1]的答案，这正是莫队算法擅长处理的情况！</p>
+<p>莫队算法的步骤如下：<br>(1)把序列分为$\sqrt{n}$个块，记$bel[i]$为$i$所在的块。<br>(2)把询问的区间以$bel[l]$为第一关键字，$r$为第二关键字排序。<br>(3)按排序后的顺序计算出答案即可。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">50010</span>;</span><br><span class="line"><span class="keyword">int</span> n,m,c[N],bel[N],siz,cnt[N];</span><br><span class="line">ll ans1[N],ans2[N];</span><br><span class="line"><span class="function">ll <span class="title">gcd</span><span class="params">(ll x,ll y)</span></span>&#123;<span class="keyword">return</span> y?gcd(y,x%y):x;&#125;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> l,r,id;</span><br><span class="line">    <span class="keyword">bool</span> <span class="keyword">operator</span>&lt;(<span class="keyword">const</span> Node&amp; k)<span class="keyword">const</span>&#123;<span class="keyword">return</span> bel[l]==bel[k.l]?r&lt;k.r:l&lt;k.l;&#125;</span><br><span class="line">&#125;que[N];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">    siz=<span class="built_in">sqrt</span>(n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;c[i]),bel[i]=i/siz+<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++) <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;que[i].l,&amp;que[i].r),que[i].id=i;</span><br><span class="line">    sort(que+<span class="number">1</span>,que+m+<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">int</span> ql=<span class="number">1</span>,qr=<span class="number">0</span>;</span><br><span class="line">    ll sum1=<span class="number">0</span>,sum2=<span class="number">0</span>,len=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">        <span class="keyword">while</span>(qr&lt;que[i].r)&#123;</span><br><span class="line">            qr++;</span><br><span class="line">            sum1+=<span class="number">2</span>*cnt[c[qr]],cnt[c[qr]]++;</span><br><span class="line">            sum2+=<span class="number">2</span>*len,len++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(ql&gt;que[i].l)&#123;</span><br><span class="line">            ql--;</span><br><span class="line">            sum1+=<span class="number">2</span>*cnt[c[ql]],cnt[c[ql]]++;</span><br><span class="line">            sum2+=<span class="number">2</span>*len,len++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(qr&gt;que[i].r)&#123;</span><br><span class="line">            sum1-=<span class="number">2</span>*cnt[c[qr]]<span class="number">-2</span>,cnt[c[qr]]--;</span><br><span class="line">            sum2-=<span class="number">2</span>*len<span class="number">-2</span>,len--;</span><br><span class="line">            qr--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(ql&lt;que[i].l)&#123;</span><br><span class="line">            sum1-=<span class="number">2</span>*cnt[c[ql]]<span class="number">-2</span>,cnt[c[ql]]--;</span><br><span class="line">            sum2-=<span class="number">2</span>*len<span class="number">-2</span>,len--;</span><br><span class="line">            ql++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(que[i].l==que[i].r||!sum1)</span><br><span class="line">            ans1[que[i].id]=<span class="number">0</span>,ans2[que[i].id]=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            ll g=gcd(sum1,sum2);</span><br><span class="line">            ans1[que[i].id]=sum1/g,ans2[que[i].id]=sum2/g;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++) <span class="built_in">printf</span>(<span class="string">"%lld/%lld\n"</span>,ans1[i],ans2[i]);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -323,8 +327,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/20/「UOJ34」多项式乘法/" rel="next" title="「UOJ34」多项式乘法">
-                <i class="fa fa-chevron-left"></i> 「UOJ34」多项式乘法
+              <a href="/2018/03/08/「BZOJ2879」-Noi2012-美食节/" rel="next" title="「BZOJ2879」[Noi2012]美食节">
+                <i class="fa fa-chevron-left"></i> 「BZOJ2879」[Noi2012]美食节
               </a>
             
           </div>
@@ -333,8 +337,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/18/「luogu1782」旅行商的背包/" rel="prev" title="「luogu1782」旅行商的背包">
-                「luogu1782」旅行商的背包 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/08/「BZOJ2120」数颜色/" rel="prev" title="「BZOJ2120」数颜色">
+                「BZOJ2120」数颜色 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
