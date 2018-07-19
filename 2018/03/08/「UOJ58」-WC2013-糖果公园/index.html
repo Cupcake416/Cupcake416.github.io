@@ -1,14 +1,84 @@
-<html>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
 <head>
-<!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-<title>「UOJ58」[WC2013]糖果公园 - Cupcake</title>
-<base href="/">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#2a2b33">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
 <meta name="description" content="题目大意给定一棵树，每个点有一个颜色$c_i$，每种颜色有一个美味指数$v_i$，$w_i$表示第$i$次遇到某种颜色时的新奇指数，实现下面两种操作： 1.询问两点间路径上的$\sum_{}^{} {v_{c_i}*w_j}$，$j$表示第$j$次遇到这种颜色。 2.修改某个点的颜色 解析树上带修改莫队。 用欧拉序转化为区间问题，然后就是一个带修改莫队啦。 注意LCA有特殊情况要处理。 代码略丑(">
 <meta property="og:type" content="article">
 <meta property="og:title" content="「UOJ58」[WC2013]糖果公园">
@@ -20,14 +90,598 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「UOJ58」[WC2013]糖果公园">
 <meta name="twitter:description" content="题目大意给定一棵树，每个点有一个颜色$c_i$，每种颜色有一个美味指数$v_i$，$w_i$表示第$i$次遇到某种颜色时的新奇指数，实现下面两种操作： 1.询问两点间路径上的$\sum_{}^{} {v_{c_i}*w_j}$，$j$表示第$j$次遇到这种颜色。 2.修改某个点的颜色 解析树上带修改莫队。 用欧拉序转化为区间问题，然后就是一个带修改莫队啦。 注意LCA有特殊情况要处理。 代码略丑(">
-<link rel="stylesheet" href="/styles.5ef4b4ae607c403b43cb.css">
 
-<script src="config.88d4eccb38a2ee93c0af.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/03/08/「UOJ58」-WC2013-糖果公园/"/>
+
+
+
+
+
+  <title>「UOJ58」[WC2013]糖果公园 | Cupcake</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
 </head>
-<body>
-<!-- hexo-inject:begin --><!-- hexo-inject:end --><is-root></is-root>
-<script src="/runtime.a66f828dca56eeb90e02.js"></script>
-<script src="/polyfills.8f67e44aa389442fc98e.js"></script>
-<script src="/main.700f85a2cf9ce83ab3e4.en.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Cupcake</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">所有命运赠送的礼物，早已在暗中标好了价格。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/08/「UOJ58」-WC2013-糖果公园/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cupcake">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cupcake">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">「UOJ58」[WC2013]糖果公园</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-08T17:12:21+08:00">
+                2018-03-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给定一棵树，每个点有一个颜色$c_i$，每种颜色有一个美味指数$v_i$，$w_i$表示第$i$次遇到某种颜色时的新奇指数，实现下面两种操作：</p>
+<p>1.询问两点间路径上的$\sum_{}^{} {v_{c_i}*w_j}$，$j$表示第$j$次遇到这种颜色。</p>
+<p>2.修改某个点的颜色</p>
+<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>树上带修改莫队。</p>
+<p>用欧拉序转化为区间问题，然后就是一个带修改莫队啦。</p>
+<p>注意LCA有特殊情况要处理。</p>
+<p>代码略丑(AC的时候没感觉，第二次看的时候完全忍不了了好吗)，已加入重写计划。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> R register</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">100010</span>,P=<span class="number">20</span>,maxp=<span class="number">17</span>;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x=<span class="number">0</span>;<span class="keyword">char</span> c=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(c&lt;<span class="string">'0'</span>||c&gt;<span class="string">'9'</span>) c=getchar();</span><br><span class="line">    <span class="keyword">while</span>(c&gt;=<span class="string">'0'</span>&amp;&amp;c&lt;=<span class="string">'9'</span>)x=(x&lt;&lt;<span class="number">3</span>)+(x&lt;&lt;<span class="number">1</span>)+c-<span class="string">'0'</span>,c=getchar();</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n,m,q,c[N],temp[N],id[N&lt;&lt;<span class="number">1</span>],totid,siz,bel[N],in[N],out[N],cnt[N];</span><br><span class="line"><span class="keyword">short</span> vis[N];</span><br><span class="line">ll v[N],w[N],ans[N];</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;g[N];</span><br><span class="line"><span class="keyword">int</span> f[N][P],dep[N];</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Que</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> l,r,t,id;</span><br><span class="line">    <span class="keyword">bool</span> <span class="keyword">operator</span>&lt;(<span class="keyword">const</span> Que&amp; k)<span class="keyword">const</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(bel[l]==bel[k.l]&amp;&amp;bel[r]==bel[k.r]) <span class="keyword">return</span> t&lt;k.t;</span><br><span class="line">        <span class="keyword">return</span> bel[l]==bel[k.l]?r&lt;k.r:l&lt;k.l;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;que[N];</span><br><span class="line"><span class="keyword">int</span> totq,totc,from[N],to[N],pos[N];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> k,<span class="keyword">int</span> fa,<span class="keyword">int</span> d)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x;</span><br><span class="line">    f[k][<span class="number">0</span>]=fa,id[++totid]=k,dep[k]=d,in[k]=totid;</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">0</span>;i&lt;g[k].size();i++)&#123;</span><br><span class="line">        x=g[k][i];</span><br><span class="line">        <span class="keyword">if</span>(x==fa) <span class="keyword">continue</span>;</span><br><span class="line">        dfs(x,k,d+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    id[++totid]=k,out[k]=totid;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">getlca</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(dep[x]&lt;dep[y]) swap(x,y);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=maxp;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">        <span class="keyword">if</span>(dep[f[x][i]]&gt;=dep[y]) x=f[x][i];</span><br><span class="line">    <span class="keyword">if</span>(x==y) <span class="keyword">return</span> x;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=maxp;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">        <span class="keyword">if</span>(f[x][i]!=f[y][i]) x=f[x][i],y=f[y][i];</span><br><span class="line">    <span class="keyword">return</span> f[x][<span class="number">0</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> opt,t1,t2;</span><br><span class="line">    n=read(),m=read(),q=read(),siz=<span class="built_in">pow</span>(n,<span class="number">2.0</span>/<span class="number">3</span>);</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++) v[i]=read();</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) w[i]=read(),bel[i]=i/siz+<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;n;i++)&#123;t1=read(),t2=read();g[t1].push_back(t2);g[t2].push_back(t1);&#125;</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) c[i]=read(),temp[i]=c[i];</span><br><span class="line">    dfs(<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=maxp;j++)</span><br><span class="line">        <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) f[i][j]=f[f[i][j<span class="number">-1</span>]][j<span class="number">-1</span>];</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=q;i++)&#123;</span><br><span class="line">        opt=read(),t1=read(),t2=read();</span><br><span class="line">        <span class="keyword">if</span>(!opt) ++totc,from[totc]=temp[t1],to[totc]=t2,pos[totc]=t1,temp[t1]=t2;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(in[t1]&gt;=in[t2]&amp;&amp;out[t1]&lt;=out[t2]||in[t2]&gt;=in[t1]&amp;&amp;out[t2]&lt;=out[t1]) que[++totq]=(Que)&#123;min(in[t1],in[t2]),max(in[t1],in[t2]),totc,totq&#125;;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">abs</span>(in[t1]-out[t2])&lt;<span class="built_in">abs</span>(out[t1]-in[t2])) que[++totq]=(Que)&#123;min(in[t1],out[t2]),max(in[t1],out[t2]),totc,totq&#125;;</span><br><span class="line">            <span class="keyword">else</span> que[++totq]=(Que)&#123;min(in[t2],out[t1]),max(in[t2],out[t1]),totc,totq&#125;;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    sort(que+<span class="number">1</span>,que+totq+<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">int</span> lca;</span><br><span class="line">    R <span class="keyword">int</span> x,pl=<span class="number">1</span>,pr=<span class="number">0</span>,pt=<span class="number">0</span>;</span><br><span class="line">    R ll res=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=totq;i++)&#123;</span><br><span class="line">        <span class="keyword">while</span>(pl&gt;que[i].l)&#123;</span><br><span class="line">            x=id[--pl];</span><br><span class="line">            <span class="keyword">if</span>(!vis[x]) vis[x]=<span class="number">1</span>,cnt[c[x]]++,res+=v[c[x]]*w[cnt[c[x]]];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) res-=v[c[x]]*w[cnt[c[x]]],vis[x]=<span class="number">2</span>,cnt[c[x]]--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(pr&lt;que[i].r)&#123;</span><br><span class="line">            x=id[++pr];</span><br><span class="line">            <span class="keyword">if</span>(!vis[x]) vis[x]=<span class="number">1</span>,cnt[c[x]]++,res+=v[c[x]]*w[cnt[c[x]]];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) res-=v[c[x]]*w[cnt[c[x]]],vis[x]=<span class="number">2</span>,cnt[c[x]]--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(pt&lt;que[i].t)&#123;</span><br><span class="line">            pt++;</span><br><span class="line">            x=pos[pt];</span><br><span class="line">            <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) res-=v[c[x]]*w[cnt[c[x]]],cnt[c[x]]--;</span><br><span class="line">            c[x]=to[pt];</span><br><span class="line">            <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) cnt[c[x]]++,res+=v[c[x]]*w[cnt[c[x]]];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(pt&gt;que[i].t)&#123;</span><br><span class="line">            x=pos[pt];</span><br><span class="line">            <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) res-=v[c[x]]*w[cnt[c[x]]],cnt[c[x]]--;</span><br><span class="line">            c[x]=from[pt];</span><br><span class="line">            <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) cnt[c[x]]++,res+=v[c[x]]*w[cnt[c[x]]];</span><br><span class="line">            pt--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(pl&lt;que[i].l)&#123;</span><br><span class="line">            x=id[pl];</span><br><span class="line">            <span class="keyword">if</span>(vis[x]==<span class="number">2</span>) vis[x]=<span class="number">1</span>,cnt[c[x]]++,res+=v[c[x]]*w[cnt[c[x]]];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) res-=v[c[x]]*w[cnt[c[x]]],vis[x]=<span class="number">0</span>,cnt[c[x]]--;</span><br><span class="line">            pl++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(pr&gt;que[i].r)&#123;</span><br><span class="line">            x=id[pr];</span><br><span class="line">            <span class="keyword">if</span>(vis[x]==<span class="number">2</span>) vis[x]=<span class="number">1</span>,cnt[c[x]]++,res+=v[c[x]]*w[cnt[c[x]]];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) res-=v[c[x]]*w[cnt[c[x]]],vis[x]=<span class="number">0</span>,cnt[c[x]]--;</span><br><span class="line">            pr--;</span><br><span class="line">        &#125;</span><br><span class="line">        lca=getlca(id[que[i].l],id[que[i].r]);</span><br><span class="line">        <span class="keyword">if</span>(lca==id[que[i].l]||lca==id[que[i].r]) ans[que[i].id]=res;</span><br><span class="line">        <span class="keyword">else</span> ans[que[i].id]=res+v[c[lca]]*w[cnt[c[lca]]+<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=totq;i++) <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,ans[i]);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/08/「BZOJ2120」数颜色/" rel="next" title="「BZOJ2120」数颜色">
+                <i class="fa fa-chevron-left"></i> 「BZOJ2120」数颜色
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/09/「luogu2596」[ZJOI2006]书架/" rel="prev" title="「luogu2596」[ZJOI2006]书架">
+                「luogu2596」[ZJOI2006]书架 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Cupcake</p>
+              <p class="site-description motion-element" itemprop="description">一只蒟蒻</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目大意"><span class="nav-number">1.</span> <span class="nav-text">题目大意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Cupcake</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+  
+
+  
+
 </body>
 </html>
