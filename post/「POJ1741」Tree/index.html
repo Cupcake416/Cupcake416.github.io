@@ -1,0 +1,33 @@
+<html>
+<head>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+<title>「POJ1741」Tree - Cupcake</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2a2b33">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+<meta name="description" content="题目大意给一棵带边权的树，求有多少点对之间距离小于等于$k$。 解析所谓点分治，就是每次选取一个根，把树分为几棵子树和一个根，于是一个树上问题就被分解为子树内的子问题和一个与根有关的问题，这样递归下去，直到问题解决。 以这题为例，“与根有关的问题” 就是求经过根节点且距离小于等于$k$的路径条数。 具体求法是dfs一遍把每个节点距根的距离放进一个数组排序一下，再拿两个指针扫一遍统计出答案，当然这样">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「POJ1741」Tree">
+<meta property="og:url" content="http://yoursite.com/post/「POJ1741」Tree/index.html">
+<meta property="og:site_name" content="Cupcake">
+<meta property="og:description" content="题目大意给一棵带边权的树，求有多少点对之间距离小于等于$k$。 解析所谓点分治，就是每次选取一个根，把树分为几棵子树和一个根，于是一个树上问题就被分解为子树内的子问题和一个与根有关的问题，这样递归下去，直到问题解决。 以这题为例，“与根有关的问题” 就是求经过根节点且距离小于等于$k$的路径条数。 具体求法是dfs一遍把每个节点距根的距离放进一个数组排序一下，再拿两个指针扫一遍统计出答案，当然这样">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-17T12:10:57.339Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="「POJ1741」Tree">
+<meta name="twitter:description" content="题目大意给一棵带边权的树，求有多少点对之间距离小于等于$k$。 解析所谓点分治，就是每次选取一个根，把树分为几棵子树和一个根，于是一个树上问题就被分解为子树内的子问题和一个与根有关的问题，这样递归下去，直到问题解决。 以这题为例，“与根有关的问题” 就是求经过根节点且距离小于等于$k$的路径条数。 具体求法是dfs一遍把每个节点距根的距离放进一个数组排序一下，再拿两个指针扫一遍统计出答案，当然这样">
+<link rel="stylesheet" href="/styles.5ef4b4ae607c403b43cb.css">
+
+<script src="config.88d4eccb38a2ee93c0af.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+<body>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><is-root></is-root>
+<script src="/runtime.a66f828dca56eeb90e02.js"></script>
+<script src="/polyfills.8f67e44aa389442fc98e.js"></script>
+<script src="/main.700f85a2cf9ce83ab3e4.en.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>
