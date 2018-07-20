@@ -1,104 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#34495e">
-  <title>「luogu1782」旅行商的背包 | Cupcake</title>
-  <link rel="alternate" href="path/of/rss" type="application/atom+xml">
-  <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
-  <link rel="stylesheet" href="/css/style.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-  
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Cupcake">
+    
+    <meta name="description" content="一只蒟蒻">
+    
+    
+    
+    
+    
+    
+    <title>「luogu1782」旅行商的背包 | Cupcake</title>
+    <link href=”http://yoursite.com“ rel=”prefetch” />
 
-  
-
-  
-
-  
-
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/highslide/highslide-full.min.js"></script>
+    <link rel="stylesheet" href="/js/highslide/highslide.css">
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>--><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
-
 <body>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="mobile-header">
-    <span><i class="iconfont icon-turnon" id="mobile-nav-toggle"></i></span>
-    <div class="mobile-logo">
-      <a href="/.">Ztopic</a>
-    </div>
-  </div>
-  <div class="page" id="mobile-nav-panel">
-    <div class="container">
-      <header class="site-nav">
-      <div class="nav-content">
-        <div class="logo">
-          <a href="/">Ztopic</a>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="http://yoursite.com" class="menuItem" style="left: 50%; top: 15%;">首页</a>
+            
+            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
+            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
+            
         </div>
-        <nav class="navbar">
-          <ul>
-            
-              <li class="menu-item">
-                <a href="/" class="menu-item-link"><i class="iconfont icon-home"></i>首页</a>
-              </li>
-            
-              <li class="menu-item">
-                <a href="/archives" class="menu-item-link"><i class="iconfont icon-archive"></i>归档</a>
-              </li>
-            
-              <li class="menu-item">
-                <a href="/about" class="menu-item-link"><i class="iconfont icon-about"></i>关于</a>
-              </li>
-            
-          </ul>
-        </nav>
-      </div>
-</header>
-
-      <div class="banner">
-  <div class="show">
-    <!-- <img src="/" alt="banner"> -->
-    <div class="banner-title">
-      
-        <div class="post-title">
-          「luogu1782」旅行商的背包
-            <div class="post-tags">
-    		    
-    	      </div>
-        </div>
-      
+        <audio id="audio" src="/imgs/oni.mp3"></audio>
     </div>
-  </div>
 </div>
-
-      <main class="main"id="main">
-          <article class="post">
-  
-
-  <header>
-    <div class="post-title mobile-post-title">
-      <h1>「luogu1782」旅行商的背包</h1>
-        <div class="post-tags">
-        
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="http://yoursite.com">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">Cupcake</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/categories">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                </li>
+                
+                
+                
+                
+                
+                <li class="">
+                    <a href="/tags">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
         </div>
     </div>
-    <div class="post-meta">
-      <span class="post-time"><i class="iconfont icon-calendar"></i>2018-03-09</span>
-      
-      <!----------------------------------->
-        
-      <!----------------------------------->
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="http://yoursite.com">Cupcake</a>
+        >
+        <span>「luogu1782」旅行商的背包</span>
     </div>
-  </header>
-  
-  <div class="post-toc" id="post-toc">
-    <h2 class="post-toc-title">目录</h2>
-    <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#题目大意"><span class="toc-text">题目大意</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解析"><span class="toc-text">解析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a></li></ol>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/03/09/「luogu1782」旅行商的背包/">「luogu1782」旅行商的背包</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2018-03-09
+            </span>
+            
+        </div>
     </div>
-  </div>
-
-
-  <div class="post-content">
-    <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>小S坚信任何问题都可以在多项式时间内解决，于是他准备亲自去当一回旅行商。在出发之前，他购进了一些物品。这些物品共有$n$种，第$i$种体积为$V_i$，价值为$W_i$，共有$D_i$件。他的背包体积是$C$。怎样装才能获得尽量多的收益呢？作为一名大神犇，他轻而易举的解决了这个问题。</p>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2018/03/09/「luogu1782」旅行商的背包/">「luogu1782」旅行商的背包</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2018-03-09
+            </p>
+            <p>
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>小S坚信任何问题都可以在多项式时间内解决，于是他准备亲自去当一回旅行商。在出发之前，他购进了一些物品。这些物品共有$n$种，第$i$种体积为$V_i$，价值为$W_i$，共有$D_i$件。他的背包体积是$C$。怎样装才能获得尽量多的收益呢？作为一名大神犇，他轻而易举的解决了这个问题。</p>
 <p>然而，就在他出发前，他又收到了一批奇货。这些货共有$m$件，第$i$件的价值$Y_i$与分配的体积$X_i$之间的关系为: $Y_i=a_i ×  X_i^2 + b_i × X_i + c_i$。这是件好事，但小S却不知道怎么处理了，于是他找到了一位超级神犇（也就是你），请你帮他解决这个问题。</p>
 <h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>普通物品部分是一个多重背包，令f[i][j]表示前$i$件物品，用容量$j$获得的最大价值，列出dp方程：</p>
 <script type="math/tex; mode=display">f[i][j]=\max(f[i-1][j-k*V_i]+k*W_i)</script><p>时间复杂度$O(N^2C)$,无法满足题目要求，考虑单调队列优化。</p>
@@ -108,117 +209,271 @@
 <script type="math/tex; mode=display">f[i][j]=\max_{k\leq \frac{j-x}{V_i}}(f[i-1][k*V_i+x]+\frac{j-x}{V_i}*W_i)+k*W_i</script><p>max里的部分可以用单调队列优化。</p>
 <p>因为这题$m$很小，第二部分直接用朴素方法就可以了。</p>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> R register</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">20010</span>;</span><br><span class="line"><span class="keyword">int</span> n,m,cap,v[N],w[N],d[N],a[N],b[N],c[N],ans=<span class="number">0</span>,cnt[N];</span><br><span class="line">ll f[N],q[N];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x=<span class="number">0</span>,w=<span class="number">1</span>;<span class="keyword">char</span> c=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(c&lt;<span class="string">'0'</span>||c&gt;<span class="string">'9'</span>)&#123;<span class="keyword">if</span>(c==<span class="string">'-'</span>) w=<span class="number">-1</span>;c=getchar();&#125;</span><br><span class="line">    <span class="keyword">while</span>(c&gt;=<span class="string">'0'</span>&amp;&amp;c&lt;=<span class="string">'9'</span>) x=(x&lt;&lt;<span class="number">3</span>)+(x&lt;&lt;<span class="number">1</span>)+c-<span class="string">'0'</span>,c=getchar();</span><br><span class="line">    <span class="keyword">return</span> x*w;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t,h,nxt;</span><br><span class="line">    n=read(),m=read(),cap=read();</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) v[i]=read(),w[i]=read(),d[i]=read();</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++) a[i]=read(),b[i]=read(),c[i]=read();</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        <span class="keyword">for</span>(R <span class="keyword">int</span> j=<span class="number">0</span>;j&lt;v[i];j++)</span><br><span class="line">            <span class="keyword">for</span>(R <span class="keyword">int</span> k=<span class="number">0</span>,head=<span class="number">0</span>,tail=<span class="number">0</span>;k*v[i]+j&lt;=cap;k++)&#123;</span><br><span class="line">                <span class="keyword">int</span> nxt=f[k*v[i]+j]-k*w[i];</span><br><span class="line">                <span class="keyword">if</span>(k-cnt[head]&gt;d[i]) head++;</span><br><span class="line">                <span class="keyword">while</span>(head&lt;tail&amp;&amp;q[tail<span class="number">-1</span>]&lt;nxt) tail--;</span><br><span class="line">                q[tail]=nxt,cnt[tail++]=k;</span><br><span class="line">                f[k*v[i]+j]=q[head]+k*w[i];</span><br><span class="line">            &#125;</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)</span><br><span class="line">        <span class="keyword">for</span>(R <span class="keyword">int</span> j=cap;j&gt;=<span class="number">0</span>;j--)</span><br><span class="line">            <span class="keyword">for</span>(R <span class="keyword">int</span> k=<span class="number">0</span>;k&lt;=j;k++) f[j]=max(f[j],f[j-k]+a[i]*k*k+b[i]*k+c[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%lld"</span>,f[cap]);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-  </div>
-  <div class="post-footer">the end</div>
+    </div>
 </article>
 
-          
-  <nav class="pagination post-nav">
-    
-      <a href="/2018/03/20/「UOJ34」多项式乘法/">
-        <span class="prev-post"><i class="iconfont icon-back"></i>「UOJ34」多项式乘法</span>
-      </a>
-    
-    
-      <a href="/2018/03/09/「luogu2596」[ZJOI2006]书架/">
-        <span class="next-post">「luogu2596」[ZJOI2006]书架<i class="iconfont icon-more"></i></span>
-      </a>
-    
-  </nav>
 
-
-          
-  
-
-
-      </main>
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
     </div>
-    <footer>
-      <div class="social-links">
-        
-          
-            <a href="https://www.zhihu.com/"><i class="iconfont icon-zhihu"></i></a>
-          
-        
-          
-            <a href="https://weibo.com"><i class="iconfont icon-weibo"></i></a>
-          
-        
-          
-            <a href="https://github.com/"><i class="iconfont icon-github"></i></a>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      </div>
-      
-        <div class="quote">
-          <p>Love all, trust a few, do wrong to none.——William Shakespeare</p>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            Cupcake
+            <i class="fa fa-quote-right"></i>
         </div>
-      
-      <div class="copyright">
-        <p>
-          由 <a href="https://hexo.io/">Hexo</a> 强力驱动
-          <span>|</span>
-          主题 - <a href="https://github.com/wa-ri/hexo-theme-ztopic">ztopic</a
-        </p>
-        <p>
-          <span>
-          
-          &copy;
-          
-            2018
-          
-          </span>
-          <i class="iconfont icon-circle"></i>
-          <span>Cupcake</span>
-        </p>
-      </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"><p>一只蒟蒻</p>
+</p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/20/「UOJ34」多项式乘法/">「UOJ34」多项式乘法</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/09/「luogu1782」旅行商的背包/">「luogu1782」旅行商的背包</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/09/「luogu2596」[ZJOI2006]书架/">「luogu2596」[ZJOI2006]书架</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「UOJ58」-WC2013-糖果公园/">「UOJ58」[WC2013]糖果公园</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「BZOJ2120」数颜色/">「BZOJ2120」数颜色</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「BZOJ2038」小Z的袜子/">「BZOJ2038」小Z的袜子</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「BZOJ2879」-Noi2012-美食节/">「BZOJ2879」[Noi2012]美食节</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「BZOJ1834」-ZJOI2010-网络扩容/">「BZOJ1834」[ZJOI2010]网络扩容</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「BZOJ1935」-SHOI2007-园丁的烦恼/">「BZOJ1935」[SHOI2007]园丁的烦恼</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/【BZOJ3262】陌上花开/">【BZOJ3262】陌上花开</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「BZOJ2120」数颜色/">「BZOJ2120」数颜色</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「BZOJ2730」-HNOI2012-矿场搭建/">「BZOJ2730」[HNOI2012]矿场搭建</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「BZOJ4031」-HEOI2015-小Z的房间/">「BZOJ4031」[HEOI2015]小Z的房间</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「UOJ58」-WC2013-糖果公园/">「UOJ58」[WC2013]糖果公园</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「luogu1251」餐巾计划问题/">「luogu1251」餐巾计划问题</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/09/「luogu2596」[ZJOI2006]书架/">「luogu2596」[ZJOI2006]书架</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「luogu2664」树上游戏/">「luogu2664」树上游戏</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「luogu2714」四元组统计/">「luogu2714」四元组统计</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/「luogu2765」魔术球问题/">「luogu2765」魔术球问题</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/03/08/【BZOJ3262】陌上花开/">【BZOJ3262】陌上花开</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+                <li class="">
+                    <a href="/2018/03/09/「luogu1782」旅行商的背包/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                <li class="">
+                    <a href="/2018/03/09/「luogu1782」旅行商的背包/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                <li class="">
+                    <a href="/2018/03/09/「luogu1782」旅行商的背包/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+</div>
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+    </li>
+    
+    <li>
+        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+    </li>
+    
+</div>
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 Cupcake Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
 </footer>
 
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont icon-up"></i>
-    </div>
-  </div>
-  <div id="mobile-nav">
-  <nav id="mobile-nav-menu">
-    
-      <a href="/" class="mobile-nav-link"><i class="iconfont icon-home"></i>首页</a>
-    
-      <a href="/archives" class="mobile-nav-link"><i class="iconfont icon-archive"></i>归档</a>
-    
-      <a href="/about" class="mobile-nav-link"><i class="iconfont icon-about"></i>关于</a>
-    
-    <div class="mobile-intro"><i class="iconfont icon-pen"></i>practice makes perfect</div>
-  </nav>
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
 </div>
-
-
-  <script src="/libs/jQuery/jquery-3.2.1.min.js"></script>
-  <script src="/libs/slideout/slideout.min.js"></script>
-  
-    <link rel="stylesheet" href="/libs/fancybox/jquery.fancybox.css">
-    <script src="/libs/fancybox/jquery.fancybox.pack.js"></script>
-  
-  
-
-  <script src="/js/ztopic.js"></script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
@@ -235,4 +490,58 @@
 </script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
+<script src="/js/activate-power-mode.js"></script>
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+<script src="/js/oni.js"></script>
+
+
+
 </html>
