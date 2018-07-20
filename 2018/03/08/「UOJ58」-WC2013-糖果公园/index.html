@@ -1,185 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Cupcake">
-    
-    <meta name="description" content="一只蒟蒻">
-    
-    
-    
-    
-    
-    
-    <title>「UOJ58」[WC2013]糖果公园 | Cupcake</title>
-    <!-- inject:style -->
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <!-- endinject -->
-    <style>
-        .cube-loading {
-            top: 0;
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background: url('/images/lg/loading.gif') no-repeat center center;
-            background-color: rgba(0,0,0,.7);
-        }
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#34495e">
+  <title>「UOJ58」[WC2013]糖果公园 | Cupcake</title>
+  <link rel="alternate" href="path/of/rss" type="application/atom+xml">
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
 
-        .cube-loading.out {
-            display: none;
-        }
+  
 
-        .cube-loading:before {
-            display: block;
-            content: 'Loading';
-            position: relative;
-            width: 100%;
-            top: 50%;
-            right: -50%;
-            color: #fff;
-        }
+  
 
-        @media(max-width: 768px) {
-            .cube-loading:before {
-                font-size: 1.2em;
-                transform: translate(-24px,20px);
-                -webkit-transform: translate(-24px,20px);
-                -o-transform: translate(-24px,20px);
-                -ms-transform: translate(-24px,20px);
-            }
-        }
+  
 
-        @media(min-width: 768px) {
-            .cube-loading:before {
-
-            }
-        }
-    </style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-    
 </head>
+
 <body>
-<!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="cube-body">
-    <nav id="cube-top-memu" class="cube-menu">
-    <ul class="cube-menu-collapse">
-        
-        <li>
-            <i class="cube-icon cube-icon-home" aria-hidden="true"></i>
-            <a href="/">首页</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-archive" aria-hidden="true"></i>
-            <a href="/archives">归档</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-categories" aria-hidden="true"></i>
-            <a href="/categories">分类</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-tags" aria-hidden="true"></i>
-            <a href="/tags">标签</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-about" aria-hidden="true"></i>
-            <a href="/about-me">关于我</a>
-        </li>
-        
-    </ul>
-</nav>
-<nav class="cube-side-menu" id="cube-side-menu">
-    <ul class="cube-menu-list">
-        
-        <li>
-            <a class="lrc-control">Open Lyrics</a>
-        </li>
-        
-        <li>
-            <a class="scroll-to-top">Top</a>
-        </li>
-    </ul>
-</nav>
-    <header class="cube-header" id="cube-header">
-    <img src=" https://i.loli.net/2018/07/20/5b51f9282a780.jpg " alt="头部背景图片">
-    
-    <div class="cube-type">
-        <span class="cube-typed-title">Cupcake&#39;s blog</span>
-        <span class="cube-typed-cursor">|</span>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="mobile-header">
+    <span><i class="iconfont icon-turnon" id="mobile-nav-toggle"></i></span>
+    <div class="mobile-logo">
+      <a href="/.">Ztopic</a>
     </div>
-    
+  </div>
+  <div class="page" id="mobile-nav-panel">
+    <div class="container">
+      <header class="site-nav">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="/">Ztopic</a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            
+              <li class="menu-item">
+                <a href="/" class="menu-item-link"><i class="iconfont icon-home"></i>首页</a>
+              </li>
+            
+              <li class="menu-item">
+                <a href="/archives" class="menu-item-link"><i class="iconfont icon-archive"></i>归档</a>
+              </li>
+            
+              <li class="menu-item">
+                <a href="/about" class="menu-item-link"><i class="iconfont icon-about"></i>关于</a>
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
 </header>
 
-    <style>
-        nav.cube-menu:before {
-            content: '';
-            visibility: hidden;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 44px;
-        
-            filter: blur(5px);
-            -webkit-filter: blur(5px);
-        
-            z-index: -1;
-            background-image: url('https://i.loli.net/2018/07/20/5b51f9282a780.jpg');
-            background-repeat: no-repeat;
-            background-position: center -356px;
-            background-size: cover;
-            background-color: transparent;
-        }
-
-        header.cube-background.cube-header-background {
-            visibility: hidden;
-            background-image: url('https://i.loli.net/2018/07/20/5b51f9282a780.jpg');
-            background-position: center -400px;
-        }
-    </style>
-    <header class="cube-background cube-header-background">
-        
-        <div class="cube-type">
-            <span class="cube-typed-title">Cupcake&#39;s blog</span>
-            <span class="cube-typed-cursor">|</span>
+      <div class="banner">
+  <div class="show">
+    <!-- <img src="/" alt="banner"> -->
+    <div class="banner-title">
+      
+        <div class="post-title">
+          「UOJ58」[WC2013]糖果公园
+            <div class="post-tags">
+    		    
+    	      </div>
         </div>
-        
-    </header>
-    <div class="load-header-background"></div>
-    <script>
-        (function (window) {
-
-            window.headerModule = {}
-            window.headerModule.image = {
-                width: '2000',
-                height: '1414'
-            }
-
-        })(window)
-    </script>
-    
-    <div class="cube-content">
-        <div class="cube-left">
-            <div class="cube-article">
-    <h1 class="title">「UOJ58」[WC2013]糖果公园</h1>
-    
-    <div class="cube-article-header">
-        <div class="cube-article-date">
-            <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
-            <!-- moment.js对象 -->
-            2018-03-08
-        </div>
-        <div class="cube-article-tags">
-    <i class="cube-icon cube-icon-tag" aria-hidden="true"></i>
-    
-</div>
+      
     </div>
-    
-    <div class="cube-article-content cube-markdown">
+  </div>
+</div>
+
+      <main class="main"id="main">
+          <article class="post">
+  
+
+  <header>
+    <div class="post-title mobile-post-title">
+      <h1>「UOJ58」[WC2013]糖果公园</h1>
+        <div class="post-tags">
         
-        <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给定一棵树，每个点有一个颜色$c_i$，每种颜色有一个美味指数$v_i$，$w_i$表示第$i$次遇到某种颜色时的新奇指数，实现下面两种操作：</p>
+        </div>
+    </div>
+    <div class="post-meta">
+      <span class="post-time"><i class="iconfont icon-calendar"></i>2018-03-08</span>
+      
+      <!----------------------------------->
+        
+      <!----------------------------------->
+    </div>
+  </header>
+  
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#题目大意"><span class="toc-text">题目大意</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解析"><span class="toc-text">解析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a></li></ol>
+    </div>
+  </div>
+
+
+  <div class="post-content">
+    <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给定一棵树，每个点有一个颜色$c_i$，每种颜色有一个美味指数$v_i$，$w_i$表示第$i$次遇到某种颜色时的新奇指数，实现下面两种操作：</p>
 <p>1.询问两点间路径上的$\sum_{}^{} {v_{c_i}*w_j}$，$j$表示第$j$次遇到这种颜色。</p>
 <p>2.修改某个点的颜色</p>
 <h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>树上带修改莫队。</p>
@@ -187,254 +106,117 @@
 <p>注意LCA有特殊情况要处理。</p>
 <p>代码略丑(AC的时候没感觉，第二次看的时候完全忍不了了好吗)，已加入重写计划。</p>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> R register</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">100010</span>,P=<span class="number">20</span>,maxp=<span class="number">17</span>;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x=<span class="number">0</span>;<span class="keyword">char</span> c=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(c&lt;<span class="string">'0'</span>||c&gt;<span class="string">'9'</span>) c=getchar();</span><br><span class="line">    <span class="keyword">while</span>(c&gt;=<span class="string">'0'</span>&amp;&amp;c&lt;=<span class="string">'9'</span>)x=(x&lt;&lt;<span class="number">3</span>)+(x&lt;&lt;<span class="number">1</span>)+c-<span class="string">'0'</span>,c=getchar();</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n,m,q,c[N],temp[N],id[N&lt;&lt;<span class="number">1</span>],totid,siz,bel[N],in[N],out[N],cnt[N];</span><br><span class="line"><span class="keyword">short</span> vis[N];</span><br><span class="line">ll v[N],w[N],ans[N];</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;g[N];</span><br><span class="line"><span class="keyword">int</span> f[N][P],dep[N];</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Que</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> l,r,t,id;</span><br><span class="line">    <span class="keyword">bool</span> <span class="keyword">operator</span>&lt;(<span class="keyword">const</span> Que&amp; k)<span class="keyword">const</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(bel[l]==bel[k.l]&amp;&amp;bel[r]==bel[k.r]) <span class="keyword">return</span> t&lt;k.t;</span><br><span class="line">        <span class="keyword">return</span> bel[l]==bel[k.l]?r&lt;k.r:l&lt;k.l;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;que[N];</span><br><span class="line"><span class="keyword">int</span> totq,totc,from[N],to[N],pos[N];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> k,<span class="keyword">int</span> fa,<span class="keyword">int</span> d)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x;</span><br><span class="line">    f[k][<span class="number">0</span>]=fa,id[++totid]=k,dep[k]=d,in[k]=totid;</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">0</span>;i&lt;g[k].size();i++)&#123;</span><br><span class="line">        x=g[k][i];</span><br><span class="line">        <span class="keyword">if</span>(x==fa) <span class="keyword">continue</span>;</span><br><span class="line">        dfs(x,k,d+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    id[++totid]=k,out[k]=totid;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">getlca</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(dep[x]&lt;dep[y]) swap(x,y);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=maxp;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">        <span class="keyword">if</span>(dep[f[x][i]]&gt;=dep[y]) x=f[x][i];</span><br><span class="line">    <span class="keyword">if</span>(x==y) <span class="keyword">return</span> x;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=maxp;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">        <span class="keyword">if</span>(f[x][i]!=f[y][i]) x=f[x][i],y=f[y][i];</span><br><span class="line">    <span class="keyword">return</span> f[x][<span class="number">0</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> opt,t1,t2;</span><br><span class="line">    n=read(),m=read(),q=read(),siz=<span class="built_in">pow</span>(n,<span class="number">2.0</span>/<span class="number">3</span>);</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++) v[i]=read();</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) w[i]=read(),bel[i]=i/siz+<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;n;i++)&#123;t1=read(),t2=read();g[t1].push_back(t2);g[t2].push_back(t1);&#125;</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) c[i]=read(),temp[i]=c[i];</span><br><span class="line">    dfs(<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=maxp;j++)</span><br><span class="line">        <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) f[i][j]=f[f[i][j<span class="number">-1</span>]][j<span class="number">-1</span>];</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=q;i++)&#123;</span><br><span class="line">        opt=read(),t1=read(),t2=read();</span><br><span class="line">        <span class="keyword">if</span>(!opt) ++totc,from[totc]=temp[t1],to[totc]=t2,pos[totc]=t1,temp[t1]=t2;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(in[t1]&gt;=in[t2]&amp;&amp;out[t1]&lt;=out[t2]||in[t2]&gt;=in[t1]&amp;&amp;out[t2]&lt;=out[t1]) que[++totq]=(Que)&#123;min(in[t1],in[t2]),max(in[t1],in[t2]),totc,totq&#125;;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">abs</span>(in[t1]-out[t2])&lt;<span class="built_in">abs</span>(out[t1]-in[t2])) que[++totq]=(Que)&#123;min(in[t1],out[t2]),max(in[t1],out[t2]),totc,totq&#125;;</span><br><span class="line">            <span class="keyword">else</span> que[++totq]=(Que)&#123;min(in[t2],out[t1]),max(in[t2],out[t1]),totc,totq&#125;;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    sort(que+<span class="number">1</span>,que+totq+<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">int</span> lca;</span><br><span class="line">    R <span class="keyword">int</span> x,pl=<span class="number">1</span>,pr=<span class="number">0</span>,pt=<span class="number">0</span>;</span><br><span class="line">    R ll res=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=totq;i++)&#123;</span><br><span class="line">        <span class="keyword">while</span>(pl&gt;que[i].l)&#123;</span><br><span class="line">            x=id[--pl];</span><br><span class="line">            <span class="keyword">if</span>(!vis[x]) vis[x]=<span class="number">1</span>,cnt[c[x]]++,res+=v[c[x]]*w[cnt[c[x]]];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) res-=v[c[x]]*w[cnt[c[x]]],vis[x]=<span class="number">2</span>,cnt[c[x]]--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(pr&lt;que[i].r)&#123;</span><br><span class="line">            x=id[++pr];</span><br><span class="line">            <span class="keyword">if</span>(!vis[x]) vis[x]=<span class="number">1</span>,cnt[c[x]]++,res+=v[c[x]]*w[cnt[c[x]]];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) res-=v[c[x]]*w[cnt[c[x]]],vis[x]=<span class="number">2</span>,cnt[c[x]]--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(pt&lt;que[i].t)&#123;</span><br><span class="line">            pt++;</span><br><span class="line">            x=pos[pt];</span><br><span class="line">            <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) res-=v[c[x]]*w[cnt[c[x]]],cnt[c[x]]--;</span><br><span class="line">            c[x]=to[pt];</span><br><span class="line">            <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) cnt[c[x]]++,res+=v[c[x]]*w[cnt[c[x]]];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(pt&gt;que[i].t)&#123;</span><br><span class="line">            x=pos[pt];</span><br><span class="line">            <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) res-=v[c[x]]*w[cnt[c[x]]],cnt[c[x]]--;</span><br><span class="line">            c[x]=from[pt];</span><br><span class="line">            <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) cnt[c[x]]++,res+=v[c[x]]*w[cnt[c[x]]];</span><br><span class="line">            pt--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(pl&lt;que[i].l)&#123;</span><br><span class="line">            x=id[pl];</span><br><span class="line">            <span class="keyword">if</span>(vis[x]==<span class="number">2</span>) vis[x]=<span class="number">1</span>,cnt[c[x]]++,res+=v[c[x]]*w[cnt[c[x]]];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) res-=v[c[x]]*w[cnt[c[x]]],vis[x]=<span class="number">0</span>,cnt[c[x]]--;</span><br><span class="line">            pl++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(pr&gt;que[i].r)&#123;</span><br><span class="line">            x=id[pr];</span><br><span class="line">            <span class="keyword">if</span>(vis[x]==<span class="number">2</span>) vis[x]=<span class="number">1</span>,cnt[c[x]]++,res+=v[c[x]]*w[cnt[c[x]]];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(vis[x]==<span class="number">1</span>) res-=v[c[x]]*w[cnt[c[x]]],vis[x]=<span class="number">0</span>,cnt[c[x]]--;</span><br><span class="line">            pr--;</span><br><span class="line">        &#125;</span><br><span class="line">        lca=getlca(id[que[i].l],id[que[i].r]);</span><br><span class="line">        <span class="keyword">if</span>(lca==id[que[i].l]||lca==id[que[i].r]) ans[que[i].id]=res;</span><br><span class="line">        <span class="keyword">else</span> ans[que[i].id]=res+v[c[lca]]*w[cnt[c[lca]]+<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(R <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=totq;i++) <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,ans[i]);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  </div>
+  <div class="post-footer">the end</div>
+</article>
+
+          
+  <nav class="pagination post-nav">
+    
+      <a href="/2018/03/09/「luogu2596」[ZJOI2006]书架/">
+        <span class="prev-post"><i class="iconfont icon-back"></i>「luogu2596」[ZJOI2006]书架</span>
+      </a>
+    
+    
+      <a href="/2018/03/08/「BZOJ2120」数颜色/">
+        <span class="next-post">「BZOJ2120」数颜色<i class="iconfont icon-more"></i></span>
+      </a>
+    
+  </nav>
+
+
+          
+  
+
+
+      </main>
     </div>
-</div>
-
-<div class="cube-article-nav">
-    <ul>
+    <footer>
+      <div class="social-links">
         
-        <li class="prev">
-            <a href="/2018/03/09/「luogu2596」[ZJOI2006]书架/">
-                <i class="cube-icon cube-prev" aria-hidden="true"></i>
-                「luogu2596」[ZJOI2006]书架
-            </a>
-        </li>
+          
+            <a href="https://www.zhihu.com/"><i class="iconfont icon-zhihu"></i></a>
+          
         
+          
+            <a href="https://weibo.com"><i class="iconfont icon-weibo"></i></a>
+          
         
-        <li class="next">
-            <a href="/2018/03/08/「BZOJ2120」数颜色/">
-                「BZOJ2120」数颜色
-                <i class="cube-icon cube-next" aria-hidden="true"></i>
-            </a>
-        </li>
+          
+            <a href="https://github.com/"><i class="iconfont icon-github"></i></a>
+          
         
-    </ul>
-</div>
-
-
-<!-- TODO 根据theme.comment的内容进行入口选择 -->
-
-
-
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+      
+        <div class="quote">
+          <p>Love all, trust a few, do wrong to none.——William Shakespeare</p>
         </div>
-        <div class="cube-right">
-            
-
-<div class="cube-search cube-sidebar" id="cube-search">
-    <div class="search-container">
-        <input type="text" placeholder="Search" class="cube-search-input" id="cube-search-input">
-        <i class="cube-icon cube-icon-search cube-search-submit" aria-hidden="true"></i>
-    </div>
-    <!-- TODO 通过给window赋一个全局变量，通过脚本赋值 -->
-</div>
-<script>
-    (function (window) {
-        'use strict';
-        window.searchModule = {}
-        window.searchModule.JSONUrl = '/content.json'
-        window.searchModule.rootUrl = '/'
-    })(window)
-</script>
-<div class="cube-search-form">
-    <div class="cube-search-control">
-        <input type="text" placeholder="Search" class="search-input">
-        <a class="close-button">
-            <i class="cube-icon cube-close" aria-hidden="true"></i>
-        </a>
-    </div>
-    <div class="cube-search-result"></div>
-</div>
-
-
-<div class="cube-author cube-sidebar" id="cube-author">
-    
-    
-    <span>Cupcake</span>
-    
-    
-    <a title="一只蒟蒻">一只蒟蒻</a>
-    
-    <div class="count">
-        <a class="count articles"><span>29</span>Article</a>
-        <a class="count tags"><span>0</span>Tags</a>
-        <a class="count categories"><span>0</span>Categories</a>
-    </div>
-</div>
-
-
-
-<div class="cube-music cube-sidebar" id="cube-music">
-    <div class="cube-player aplayer" id="cube-player"></div>
-</div>
-<script>
-    (function (window) {
-        window.musicModule = {}
-        window.musicModule.musicConfig = '{"narrow":false,"autoplay":false,"showlrc":3,"theme":"#b7daff","mutex":true,"mode":"circulation","preload":"auto","listmaxheight":"513px","music":[{"title":"Dear friends","author":"TRIPLANE","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/TRIPLANE - Dear friends.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Dear friends - TRIPLANE.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/TRIPLANE - Dear friends.jpg"},{"title":"Butter-Fly","author":"和田光司","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/和田光司 - Butter-Fly (ピアノヴァージョン).mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Butter-Fly (ピアノヴァージョン) - 和田光司.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/和田光司 - Butter-Fly (ピアノヴァージョン).jpg"},{"title":"宵闇花火","author":"葉月ゆら","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/葉月ゆら - 宵闇花火.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/宵闇花火 - 葉月ゆら.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/葉月ゆら - 宵闇花火.jpg"}]}'
-        window.musicModule.lrcConfig = {
-            open: 'Open Lyrics',
-            close: 'Close Lyrics'
-        }
-    })(window)
-</script>
-
-
-
-<div class="cube-recent-posts cube-sidebar" id="cube-recent-posts">
-    <div class="title">
-        <a>Recent Posts</a>
-    </div>
-    <ul class="list">
-        
-        
-        <li>
-            <!-- TODO 如果文章要显示图片，那么在front-matter上添加preview属性(url or path) -->
-            
-            <div class="normal">
-                <p class="index first">
-                    <span>1</span>
-                </p>
-                <p class="title">
-                    <a href="/2018/03/20/「UOJ34」多项式乘法/" title="「UOJ34」多项式乘法">「UOJ34」多项式乘法</a>
-                </p>
-            </div>
-            
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>2</span>
-                </p>
-                <p class="title">
-                    <a href="/2018/03/09/「luogu1782」旅行商的背包/" title="「luogu1782」旅行商的背包">「luogu1782」旅行商的背包</a>
-                </p>
-            </div>
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>3</span>
-                </p>
-                <p class="title">
-                    <a href="/2018/03/09/「luogu2596」[ZJOI2006]书架/" title="「luogu2596」[ZJOI2006]书架">「luogu2596」[ZJOI2006]书架</a>
-                </p>
-            </div>
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>4</span>
-                </p>
-                <p class="title">
-                    <a href="/2018/03/08/「UOJ58」-WC2013-糖果公园/" title="「UOJ58」[WC2013]糖果公园">「UOJ58」[WC2013]糖果公园</a>
-                </p>
-            </div>
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>5</span>
-                </p>
-                <p class="title">
-                    <a href="/2018/03/08/「BZOJ2120」数颜色/" title="「BZOJ2120」数颜色">「BZOJ2120」数颜色</a>
-                </p>
-            </div>
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-
-
-
-
-
-<div class="cube-links cube-sidebar" id="cube-links">
-    <div class="title">
-        <a>Links</a>
-    </div>
-    <ul class="list">
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/GitHub.png">
-            
-            <a href="https://github.com/ZEROKISEKI" target="_blank">GitHub</a>
-        </li>
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/Coding.png">
-            
-            <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
-        </li>
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/SF.png">
-            
-            <a href="https://segmentfault.com/u/aonosora" target="_blank">SF社区</a>
-        </li>
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/开发者头条.png">
-            
-            <a href="https://toutiao.io/u/148070" target="_blank">开发者头条</a>
-        </li>
-        
-    </ul>
-</div>
-
-
-
-<div class="cube-friend-links cube-sidebar" id="cube-friend-links">
-    <div class="title">
-        <a>Friend Links</a>
-    </div>
-    <ul class="list">
-        
-        <li>
-            <!-- TODO change avatar.png to friend.png-->
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/friend_links/micblo.png">
-            <a href="https://blog.micblo.com/" target="_blank">罗大佬</a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-    </div>
-</div>
-<footer class="cube-footer">
-    
-© 2017 Cupcake
-
-<br>
-Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+      
+      <div class="copyright">
+        <p>
+          由 <a href="https://hexo.io/">Hexo</a> 强力驱动
+          <span>|</span>
+          主题 - <a href="https://github.com/wa-ri/hexo-theme-ztopic">ztopic</a
+        </p>
+        <p>
+          <span>
+          
+          &copy;
+          
+            2018
+          
+          </span>
+          <i class="iconfont icon-circle"></i>
+          <span>Cupcake</span>
+        </p>
+      </div>
 </footer>
-<!-- inject:script -->
-<script src="/js/script.js"></script>
-<!-- endinject -->
-<div class="cube-loading out"></div>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <div id="mobile-nav">
+  <nav id="mobile-nav-menu">
+    
+      <a href="/" class="mobile-nav-link"><i class="iconfont icon-home"></i>首页</a>
+    
+      <a href="/archives" class="mobile-nav-link"><i class="iconfont icon-archive"></i>归档</a>
+    
+      <a href="/about" class="mobile-nav-link"><i class="iconfont icon-about"></i>关于</a>
+    
+    <div class="mobile-intro"><i class="iconfont icon-pen"></i>practice makes perfect</div>
+  </nav>
+</div>
+
+
+  <script src="/libs/jQuery/jquery-3.2.1.min.js"></script>
+  <script src="/libs/slideout/slideout.min.js"></script>
+  
+    <link rel="stylesheet" href="/libs/fancybox/jquery.fancybox.css">
+    <script src="/libs/fancybox/jquery.fancybox.pack.js"></script>
+  
+  
+
+  <script src="/js/ztopic.js"></script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {

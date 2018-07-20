@@ -1,609 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Cupcake">
-    
-    <meta name="description" content="一只蒟蒻">
-    
-    
-    
-    
-    
-    
-    <title>Archives | Cupcake</title>
-    <!-- inject:style -->
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <!-- endinject -->
-    <style>
-        .cube-loading {
-            top: 0;
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background: url('/images/lg/loading.gif') no-repeat center center;
-            background-color: rgba(0,0,0,.7);
-        }
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#34495e">
+  <title>Cupcake</title>
+  <link rel="alternate" href="path/of/rss" type="application/atom+xml">
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
 
-        .cube-loading.out {
-            display: none;
-        }
+  
 
-        .cube-loading:before {
-            display: block;
-            content: 'Loading';
-            position: relative;
-            width: 100%;
-            top: 50%;
-            right: -50%;
-            color: #fff;
-        }
+  
 
-        @media(max-width: 768px) {
-            .cube-loading:before {
-                font-size: 1.2em;
-                transform: translate(-24px,20px);
-                -webkit-transform: translate(-24px,20px);
-                -o-transform: translate(-24px,20px);
-                -ms-transform: translate(-24px,20px);
-            }
-        }
+  
 
-        @media(min-width: 768px) {
-            .cube-loading:before {
-
-            }
-        }
-    </style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-    
 </head>
+
 <body>
-<!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="cube-body">
-    <nav id="cube-top-memu" class="cube-menu">
-    <ul class="cube-menu-collapse">
-        
-        <li>
-            <i class="cube-icon cube-icon-home" aria-hidden="true"></i>
-            <a href="/">首页</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-archive" aria-hidden="true"></i>
-            <a href="/archives">归档</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-categories" aria-hidden="true"></i>
-            <a href="/categories">分类</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-tags" aria-hidden="true"></i>
-            <a href="/tags">标签</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-about" aria-hidden="true"></i>
-            <a href="/about-me">关于我</a>
-        </li>
-        
-    </ul>
-</nav>
-<nav class="cube-side-menu" id="cube-side-menu">
-    <ul class="cube-menu-list">
-        
-        <li>
-            <a class="lrc-control">Open Lyrics</a>
-        </li>
-        
-        <li>
-            <a class="scroll-to-top">Top</a>
-        </li>
-    </ul>
-</nav>
-    <header class="cube-header" id="cube-header">
-    <img src=" https://i.loli.net/2018/07/20/5b51f9282a780.jpg " alt="头部背景图片">
-    
-    <div class="cube-type">
-        <span class="cube-typed-title">Cupcake&#39;s blog</span>
-        <span class="cube-typed-cursor">|</span>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="mobile-header">
+    <span><i class="iconfont icon-turnon" id="mobile-nav-toggle"></i></span>
+    <div class="mobile-logo">
+      <a href="/.">Ztopic</a>
     </div>
-    
+  </div>
+  <div class="page" id="mobile-nav-panel">
+    <div class="container">
+      <header class="site-nav">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="/">Ztopic</a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            
+              <li class="menu-item">
+                <a href="/" class="menu-item-link"><i class="iconfont icon-home"></i>首页</a>
+              </li>
+            
+              <li class="menu-item">
+                <a href="/archives" class="menu-item-link"><i class="iconfont icon-archive"></i>归档</a>
+              </li>
+            
+              <li class="menu-item">
+                <a href="/about" class="menu-item-link"><i class="iconfont icon-about"></i>关于</a>
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
 </header>
 
-    <style>
-        nav.cube-menu:before {
-            content: '';
-            visibility: hidden;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 44px;
-        
-            filter: blur(5px);
-            -webkit-filter: blur(5px);
-        
-            z-index: -1;
-            background-image: url('https://i.loli.net/2018/07/20/5b51f9282a780.jpg');
-            background-repeat: no-repeat;
-            background-position: center -356px;
-            background-size: cover;
-            background-color: transparent;
-        }
-
-        header.cube-background.cube-header-background {
-            visibility: hidden;
-            background-image: url('https://i.loli.net/2018/07/20/5b51f9282a780.jpg');
-            background-position: center -400px;
-        }
-    </style>
-    <header class="cube-background cube-header-background">
-        
-        <div class="cube-type">
-            <span class="cube-typed-title">Cupcake&#39;s blog</span>
-            <span class="cube-typed-cursor">|</span>
+      <div class="banner">
+  <div class="show">
+    <!-- <img src="/" alt="banner"> -->
+    <div class="banner-title">
+      
+        <div class="intro">
+          practice makes perfect
         </div>
-        
-    </header>
-    <div class="load-header-background"></div>
-    <script>
-        (function (window) {
-
-            window.headerModule = {}
-            window.headerModule.image = {
-                width: '2000',
-                height: '1414'
-            }
-
-        })(window)
-    </script>
-    
-    <div class="cube-content">
-        <div class="cube-left">
-            <style>
-    @media(max-width: 768px) {
-        body {
-            background-color: #fff!important;
-        }
-    }
-</style>
-<div class="cube-archives">
-    
-        
-        <div class="cube-archive" style="margin-top: 0;">
-            
-                
-                   
-                            <h1 class="title">2018</h1>
-                            <ul class="posts">
-                   
-                            <li class="post">
-                                <a href="/2018/03/20/「UOJ34」多项式乘法/">「UOJ34」多项式乘法</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/09/「luogu1782」旅行商的背包/">「luogu1782」旅行商的背包</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/09/「luogu2596」[ZJOI2006]书架/">「luogu2596」[ZJOI2006]书架</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「UOJ58」-WC2013-糖果公园/">「UOJ58」[WC2013]糖果公园</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「BZOJ2120」数颜色/">「BZOJ2120」数颜色</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「BZOJ2038」小Z的袜子/">「BZOJ2038」小Z的袜子</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「BZOJ2879」-Noi2012-美食节/">「BZOJ2879」[Noi2012]美食节</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「BZOJ1834」-ZJOI2010-网络扩容/">「BZOJ1834」[ZJOI2010]网络扩容</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「BZOJ1935」-SHOI2007-园丁的烦恼/">「BZOJ1935」[SHOI2007]园丁的烦恼</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/【BZOJ3262】陌上花开/">【BZOJ3262】陌上花开</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「luogu2664」树上游戏/">「luogu2664」树上游戏</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「BZOJ2152」聪聪可可/">「BZOJ2152」聪聪可可</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「POJ1741」Tree/">「POJ1741」Tree</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「BZOJ4031」-HEOI2015-小Z的房间/">「BZOJ4031」[HEOI2015]小Z的房间</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「POJ2947」Widget Factory/">「POJ2947」Widget Factory</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「POJ2942」Knights of the Round Table/">「POJ2942」Knights of the Round Table</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「BZOJ2730」-HNOI2012-矿场搭建/">「BZOJ2730」[HNOI2012]矿场搭建</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「POJ3352」Road Construction/">「POJ3352」Road Construction</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「BZOJ3572」-HNOI2014-世界树/">「BZOJ3572」[HNOI2014]世界树</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「luogu1880」-NOI1995-石子合并/">「luogu1880」[NOI1995]石子合并</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「BZOJ1070」-SCOI2007-修车/">「BZOJ1070」[SCOI2007]修车</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「luogu2714」四元组统计/">「luogu2714」四元组统计</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「luogu1251」餐巾计划问题/">「luogu1251」餐巾计划问题</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「luogu2764」最小路径覆盖问题/">「luogu2764」最小路径覆盖问题</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「luogu2763」试题库问题/">「luogu2763」试题库问题</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「luogu2766」最长不下降子序列问题/">「luogu2766」最长不下降子序列问题</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「BZOJ3160」万径人踪灭/">「BZOJ3160」万径人踪灭</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「luogu2765」魔术球问题/">「luogu2765」魔术球问题</a>
-                            </li>
-                
-            
-                
-                   
-                            <li class="post">
-                                <a href="/2018/03/08/「BZOJ3527」-Zjoi2014-力/">「BZOJ3527」[Zjoi2014]力</a>
-                            </li>
-                
-            
-                    </ul>
-                        </div>
-        
-    
+      
+    </div>
+  </div>
 </div>
+
+      <main class="main"id="main">
+          
+  <div class="archives-container">
+    
+    
+      
+      
+        
+        
+        <section class="archive-wrap">
+          <div class="archive-year">
+            <!-- <a href="/archives/2018" class="archive-year">2018</a> -->
+            2018
+          </div>
+          <div class="archives">
+      
+      <div class="archive-content">
+      <a class="archive-article" href="/2018/03/08/「BZOJ1070」-SCOI2007-修车/">
+        <span class="archive-meta">03-08</span>
+        <span class="archive-title">「BZOJ1070」[SCOI2007]修车</span>
+      </a>
+    </article>
+    
+      
+      
+      <div class="archive-content">
+      <a class="archive-article" href="/2018/03/08/「luogu2714」四元组统计/">
+        <span class="archive-meta">03-08</span>
+        <span class="archive-title">「luogu2714」四元组统计</span>
+      </a>
+    </article>
+    
+      
+      
+      <div class="archive-content">
+      <a class="archive-article" href="/2018/03/08/「luogu1251」餐巾计划问题/">
+        <span class="archive-meta">03-08</span>
+        <span class="archive-title">「luogu1251」餐巾计划问题</span>
+      </a>
+    </article>
+    
+      
+      
+      <div class="archive-content">
+      <a class="archive-article" href="/2018/03/08/「luogu2764」最小路径覆盖问题/">
+        <span class="archive-meta">03-08</span>
+        <span class="archive-title">「luogu2764」最小路径覆盖问题</span>
+      </a>
+    </article>
+    
+      
+      
+      <div class="archive-content">
+      <a class="archive-article" href="/2018/03/08/「luogu2763」试题库问题/">
+        <span class="archive-meta">03-08</span>
+        <span class="archive-title">「luogu2763」试题库问题</span>
+      </a>
+    </article>
+    
+      
+      
+      <div class="archive-content">
+      <a class="archive-article" href="/2018/03/08/「luogu2766」最长不下降子序列问题/">
+        <span class="archive-meta">03-08</span>
+        <span class="archive-title">「luogu2766」最长不下降子序列问题</span>
+      </a>
+    </article>
+    
+      
+      
+      <div class="archive-content">
+      <a class="archive-article" href="/2018/03/08/「BZOJ3160」万径人踪灭/">
+        <span class="archive-meta">03-08</span>
+        <span class="archive-title">「BZOJ3160」万径人踪灭</span>
+      </a>
+    </article>
+    
+      
+      
+      <div class="archive-content">
+      <a class="archive-article" href="/2018/03/08/「luogu2765」魔术球问题/">
+        <span class="archive-meta">03-08</span>
+        <span class="archive-title">「luogu2765」魔术球问题</span>
+      </a>
+    </article>
+    
+      
+      
+      <div class="archive-content">
+      <a class="archive-article" href="/2018/03/08/「BZOJ3527」-Zjoi2014-力/">
+        <span class="archive-meta">03-08</span>
+        <span class="archive-title">「BZOJ3527」[Zjoi2014]力</span>
+      </a>
+    </article>
+    
+    
+      </div></section>
+    
+  </div>
+
+          
+     <nav class="pagination">
+    
+      <a href="/archives/2018/page/2/">
+        <span class="prev"><i class="iconfont icon-back"></i>上一页</span>
+      </a>
+    
+    
+  </nav>
+
+
+          
+
+      </main>
+    </div>
+    <footer>
+      <div class="social-links">
+        
+          
+            <a href="https://www.zhihu.com/"><i class="iconfont icon-zhihu"></i></a>
+          
+        
+          
+            <a href="https://weibo.com"><i class="iconfont icon-weibo"></i></a>
+          
+        
+          
+            <a href="https://github.com/"><i class="iconfont icon-github"></i></a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+      
+        <div class="quote">
+          <p>Love all, trust a few, do wrong to none.——William Shakespeare</p>
         </div>
-        <div class="cube-right">
-            
-
-<div class="cube-search cube-sidebar" id="cube-search">
-    <div class="search-container">
-        <input type="text" placeholder="Search" class="cube-search-input" id="cube-search-input">
-        <i class="cube-icon cube-icon-search cube-search-submit" aria-hidden="true"></i>
-    </div>
-    <!-- TODO 通过给window赋一个全局变量，通过脚本赋值 -->
-</div>
-<script>
-    (function (window) {
-        'use strict';
-        window.searchModule = {}
-        window.searchModule.JSONUrl = '/content.json'
-        window.searchModule.rootUrl = '/'
-    })(window)
-</script>
-<div class="cube-search-form">
-    <div class="cube-search-control">
-        <input type="text" placeholder="Search" class="search-input">
-        <a class="close-button">
-            <i class="cube-icon cube-close" aria-hidden="true"></i>
-        </a>
-    </div>
-    <div class="cube-search-result"></div>
-</div>
-
-
-<div class="cube-author cube-sidebar" id="cube-author">
-    
-    
-    <span>Cupcake</span>
-    
-    
-    <a title="一只蒟蒻">一只蒟蒻</a>
-    
-    <div class="count">
-        <a class="count articles"><span>29</span>Article</a>
-        <a class="count tags"><span>0</span>Tags</a>
-        <a class="count categories"><span>0</span>Categories</a>
-    </div>
-</div>
-
-
-
-<div class="cube-music cube-sidebar" id="cube-music">
-    <div class="cube-player aplayer" id="cube-player"></div>
-</div>
-<script>
-    (function (window) {
-        window.musicModule = {}
-        window.musicModule.musicConfig = '{"narrow":false,"autoplay":false,"showlrc":3,"theme":"#b7daff","mutex":true,"mode":"circulation","preload":"auto","listmaxheight":"513px","music":[{"title":"Dear friends","author":"TRIPLANE","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/TRIPLANE - Dear friends.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Dear friends - TRIPLANE.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/TRIPLANE - Dear friends.jpg"},{"title":"Butter-Fly","author":"和田光司","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/和田光司 - Butter-Fly (ピアノヴァージョン).mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Butter-Fly (ピアノヴァージョン) - 和田光司.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/和田光司 - Butter-Fly (ピアノヴァージョン).jpg"},{"title":"宵闇花火","author":"葉月ゆら","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/葉月ゆら - 宵闇花火.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/宵闇花火 - 葉月ゆら.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/葉月ゆら - 宵闇花火.jpg"}]}'
-        window.musicModule.lrcConfig = {
-            open: 'Open Lyrics',
-            close: 'Close Lyrics'
-        }
-    })(window)
-</script>
-
-
-
-<div class="cube-recent-posts cube-sidebar" id="cube-recent-posts">
-    <div class="title">
-        <a>Recent Posts</a>
-    </div>
-    <ul class="list">
-        
-        
-        <li>
-            <!-- TODO 如果文章要显示图片，那么在front-matter上添加preview属性(url or path) -->
-            
-            <div class="normal">
-                <p class="index first">
-                    <span>1</span>
-                </p>
-                <p class="title">
-                    <a href="/2018/03/20/「UOJ34」多项式乘法/" title="「UOJ34」多项式乘法">「UOJ34」多项式乘法</a>
-                </p>
-            </div>
-            
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>2</span>
-                </p>
-                <p class="title">
-                    <a href="/2018/03/09/「luogu1782」旅行商的背包/" title="「luogu1782」旅行商的背包">「luogu1782」旅行商的背包</a>
-                </p>
-            </div>
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>3</span>
-                </p>
-                <p class="title">
-                    <a href="/2018/03/09/「luogu2596」[ZJOI2006]书架/" title="「luogu2596」[ZJOI2006]书架">「luogu2596」[ZJOI2006]书架</a>
-                </p>
-            </div>
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>4</span>
-                </p>
-                <p class="title">
-                    <a href="/2018/03/08/「UOJ58」-WC2013-糖果公园/" title="「UOJ58」[WC2013]糖果公园">「UOJ58」[WC2013]糖果公园</a>
-                </p>
-            </div>
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>5</span>
-                </p>
-                <p class="title">
-                    <a href="/2018/03/08/「BZOJ2120」数颜色/" title="「BZOJ2120」数颜色">「BZOJ2120」数颜色</a>
-                </p>
-            </div>
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-
-
-
-
-
-<div class="cube-links cube-sidebar" id="cube-links">
-    <div class="title">
-        <a>Links</a>
-    </div>
-    <ul class="list">
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/GitHub.png">
-            
-            <a href="https://github.com/ZEROKISEKI" target="_blank">GitHub</a>
-        </li>
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/Coding.png">
-            
-            <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
-        </li>
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/SF.png">
-            
-            <a href="https://segmentfault.com/u/aonosora" target="_blank">SF社区</a>
-        </li>
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/开发者头条.png">
-            
-            <a href="https://toutiao.io/u/148070" target="_blank">开发者头条</a>
-        </li>
-        
-    </ul>
-</div>
-
-
-
-<div class="cube-friend-links cube-sidebar" id="cube-friend-links">
-    <div class="title">
-        <a>Friend Links</a>
-    </div>
-    <ul class="list">
-        
-        <li>
-            <!-- TODO change avatar.png to friend.png-->
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/friend_links/micblo.png">
-            <a href="https://blog.micblo.com/" target="_blank">罗大佬</a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-    </div>
-</div>
-<footer class="cube-footer">
-    
-© 2017 Cupcake
-
-<br>
-Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+      
+      <div class="copyright">
+        <p>
+          由 <a href="https://hexo.io/">Hexo</a> 强力驱动
+          <span>|</span>
+          主题 - <a href="https://github.com/wa-ri/hexo-theme-ztopic">ztopic</a
+        </p>
+        <p>
+          <span>
+          
+          &copy;
+          
+            2018
+          
+          </span>
+          <i class="iconfont icon-circle"></i>
+          <span>Cupcake</span>
+        </p>
+      </div>
 </footer>
-<!-- inject:script -->
-<script src="/js/script.js"></script>
-<!-- endinject -->
-<div class="cube-loading out"></div>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <div id="mobile-nav">
+  <nav id="mobile-nav-menu">
+    
+      <a href="/" class="mobile-nav-link"><i class="iconfont icon-home"></i>首页</a>
+    
+      <a href="/archives" class="mobile-nav-link"><i class="iconfont icon-archive"></i>归档</a>
+    
+      <a href="/about" class="mobile-nav-link"><i class="iconfont icon-about"></i>关于</a>
+    
+    <div class="mobile-intro"><i class="iconfont icon-pen"></i>practice makes perfect</div>
+  </nav>
+</div>
+
+
+  <script src="/libs/jQuery/jquery-3.2.1.min.js"></script>
+  <script src="/libs/slideout/slideout.min.js"></script>
+  
+    <link rel="stylesheet" href="/libs/fancybox/jquery.fancybox.css">
+    <script src="/libs/fancybox/jquery.fancybox.pack.js"></script>
+  
+  
+
+  <script src="/js/ztopic.js"></script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
