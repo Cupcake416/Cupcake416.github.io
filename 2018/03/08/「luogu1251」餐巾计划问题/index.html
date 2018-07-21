@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="display: none;" >
+<html style="display: none;" lang="zh">
     <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
     <!--
@@ -65,7 +65,7 @@
         <link rel="stylesheet" href="/css/ie-blocker.css">
 
         
-            <script src="/js/ie-blocker.en.js"></script>
+            <script src="/js/ie-blocker.zhCN.js"></script>
         
     <![endif]-->
 
@@ -84,6 +84,10 @@
 
     
 
+    
+        
+            <link rel="stylesheet" href="/css/fontawesome.min.css">
+        
     
 
     <!-- Config CSS -->
@@ -300,430 +304,85 @@
 
 
     
-        <body id="scheme-Paradox" class="lazy">
+        <body id="scheme-Isolation" class="lazy">
             <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="material-layout  mdl-js-layout has-drawer is-upgraded">
                 
-
-                <!-- Main Container -->
-                <main class="material-layout__content" id="main">
-
-                    <!-- Top Anchor -->
-                    <div id="top"></div>
-
-                    
-                        <!-- Hamburger Button -->
-                        <button class="MD-burger-icon sidebar-toggle">
-                            <span id="MD-burger-id" class="MD-burger-layer"></span>
-                        </button>
-                    
-
-                    <!-- Post TOC -->
-
-    
-    <!-- Back Button -->
-    <!--
-    <div class="material-back" id="backhome-div" tabindex="0">
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
-           href="#" onclick="window.history.back();return false;"
-           target="_self"
-           role="button"
-           data-upgraded=",MaterialButton,MaterialRipple">
-            <i class="material-icons" role="presentation">arrow_back</i>
-            <span class="mdl-button__ripple-container">
-                <span class="mdl-ripple"></span>
-            </span>
-        </a>
-    </div>
-    -->
-
-
-    <!-- Left aligned menu below button -->
-    
-    
-    <button id="post-toc-trigger-btn"
-        class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">format_list_numbered</i>
-    </button>
-
-    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题目大意"><span class="post-toc-number">1.</span> <span class="post-toc-text">题目大意</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解析"><span class="post-toc-number">2.</span> <span class="post-toc-text">解析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码"><span class="post-toc-number">3.</span> <span class="post-toc-text">代码</span></a></li></ol>
-    </ul>
-    
-
-
-
-
-<!-- Layouts -->
-
-    <!-- Post Module -->
-    <div class="material-post_container">
-
-        <div class="material-post mdl-grid">
-            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-
-                <!-- Post Header(Thumbnail & Title) -->
-                
-    <!-- Paradox Post Header -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 19 + 1);
-
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-</script>
-
-        
-    
-            <p class="article-headline-p">
-                「luogu1251」餐巾计划问题
-            </p>
-        </div>
-
-
-
-
-
-                
-                    <!-- Paradox Post Info -->
-                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-
-    <!-- Author Avatar -->
-    <div id="author-avatar">
-        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
-    </div>
-    <!-- Author Name & Date -->
-    <div>
-        <strong>Cupcake</strong>
-        <span>Mar 08, 2018</span>
-    </div>
-
-    <div class="section-spacer"></div>
-
-    <!-- Favorite -->
-    <!--
-        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
-            <i class="material-icons" role="presentation">favorite</i>
-            <span class="visuallyhidden">favorites</span>
-        </button>
-    -->
-
-    <!-- Qrcode -->
-    
-
-    <!-- Tags (bookmark) -->
-    
-
-    <!-- Share -->
-    
-        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">share</i>
-    <span class="visuallyhidden">share</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
-    
-
-    
-
-    <!-- Share Weibo -->
-    
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=「luogu1251」餐巾计划问题&url=http://yoursite.com/2018/03/08/「luogu1251」餐巾计划问题/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
-            <li class="mdl-menu__item">
-                شارك على Weibo
-            </li>
-        </a>
-    
-
-    <!-- Share Twitter -->
-    
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=「luogu1251」餐巾计划问题&url=http://yoursite.com/2018/03/08/「luogu1251」餐巾计划问题/index.html&via=Cupcake" target="_blank">
-            <li class="mdl-menu__item">
-                شارك على Twitter
-            </li>
-        </a>
-    
-
-    <!-- Share Facebook -->
-    
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/03/08/「luogu1251」餐巾计划问题/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                شارك على Facebook
-            </li>
-        </a>
-    
-
-    <!-- Share Google+ -->
-    
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/03/08/「luogu1251」餐巾计划问题/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                شارك على Google+
-            </li>
-        </a>
-    
-
-    <!-- Share LinkedIn -->
-    
-
-    <!-- Share QQ -->
-    
-
-    <!-- Share Telegram -->
-    
-</ul>
-
-    
-</div>
-
-                
-
-                <!-- Post Content -->
-                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
-    
-        <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>一个餐厅在相继的$N$天里,每天需用的餐巾数不尽相同。假设第$i$天需要$r_i$块餐巾$(i=1,2,…,N)$。餐厅可以购买新的餐巾,每块餐巾的费用为$p$分;或者把旧餐巾送到快洗部,洗一块需$m$天,其费用为$f$分;或者送到慢洗部,洗一块需$n$天$(n&gt;m)$,其费用为$s$分$(s&lt;f)$。</p>
-<p>每天结束时,餐厅必须决定将多少块脏的餐巾送到快洗部,多少块餐巾送到慢洗部,以及多少块保存起来延期送洗。但是每天洗好的餐巾和购买的新餐巾数之和,要满足当天的需求量。</p>
-<p>试设计一个算法为餐厅合理地安排好$N$天中餐巾使用计划,使总的花费最小。</p>
-<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>拆点，把点i拆成$X_i$和$Y_i$。</p>
-<p>每个$X_i$向汇点$t$连一条容量为$r_i$，费用为0的边，表示每天要满足的要求。(这里涉及到一个贪心即每天恰好提供$r_i$块餐巾时总花费最小，因为我们总可以把餐巾留到下一天而不用支付额外的费用，所以这样做不会使方案更劣)</p>
-<p>源点$s$向每个$Y_i$连一条容量为$r_i$，费用为0的边，表示向网络中补充这一天使用后的餐巾。</p>
-<p>源点$s$向每个$X_i$连一条容量为正无穷，费用为$p$的边，表示购买新的餐巾。</p>
-<p>每个$Y_i$向$Y_{i+1}$连一条容量为正无穷，费用为0的边，表示把脏餐巾留到下一天。</p>
-<p>每个$Y_i$向$X_{i+m}$连一条容量为正无穷，费用为$f$的边，表示送到快洗部。</p>
-<p>每个$Y_i$向$X_{i+n}$连一条容量为正无穷，费用为$s$的边，表示送到慢洗部。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">4010</span>;</span><br><span class="line"><span class="keyword">const</span> ll oo=<span class="number">3e18</span>;</span><br><span class="line"><span class="keyword">int</span> tot,n,m,f,s,p,super_s,<span class="keyword">super_t</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Edge</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> from,to;</span><br><span class="line">    ll flow,cap,cost;</span><br><span class="line">    Edge(<span class="keyword">int</span> _from=<span class="number">0</span>,<span class="keyword">int</span> _to=<span class="number">0</span>,ll _flow=<span class="number">0</span>,ll _cap=<span class="number">0</span>,ll _cost=<span class="number">0</span>):from(_from),to(_to),flow(_flow),cap(_cap),cost(_cost)&#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line">Edge edge[<span class="number">40010</span>];</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;point[N];</span><br><span class="line"><span class="keyword">int</span> edge_tot;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">add_edge</span><span class="params">(<span class="keyword">int</span> f,<span class="keyword">int</span> t,ll c,ll cc)</span></span>&#123;</span><br><span class="line">    edge[edge_tot]=Edge(f,t,<span class="number">0</span>,c,cc);</span><br><span class="line">    point[f].push_back(edge_tot++);</span><br><span class="line">    edge[edge_tot]=Edge(t,f,<span class="number">0</span>,<span class="number">0</span>,-cc);</span><br><span class="line">    point[t].push_back(edge_tot++);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line">ll dis[N];</span><br><span class="line"><span class="keyword">int</span> pre[N];</span><br><span class="line"><span class="keyword">bool</span> inq[N];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">spfa</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">memset</span>(dis,<span class="number">127</span>/<span class="number">2</span>,<span class="keyword">sizeof</span>(dis));</span><br><span class="line">    <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt;q;</span><br><span class="line">    q.push(super_s);</span><br><span class="line">    dis[super_s]=<span class="number">0</span>,inq[super_s]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> x;</span><br><span class="line">    <span class="keyword">while</span>(!q.empty())&#123;</span><br><span class="line">        x=q.front();q.pop();</span><br><span class="line">        inq[x]=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;point[x].size();i++)&#123;</span><br><span class="line">            Edge&amp; e=edge[point[x][i]];</span><br><span class="line">            <span class="keyword">if</span>(e.cap&lt;=e.flow) <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">if</span>(dis[e.to]&gt;dis[x]+e.cost)&#123;</span><br><span class="line">                dis[e.to]=dis[x]+e.cost,pre[e.to]=point[x][i];</span><br><span class="line">                <span class="keyword">if</span>(!inq[e.to])&#123;q.push(e.to);inq[e.to]=<span class="number">1</span>;&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dis[<span class="keyword">super_t</span>]&lt;oo;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">ll <span class="title">mincostflow</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> now;</span><br><span class="line">    ll minf,ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(spfa())&#123;</span><br><span class="line">        minf=oo,now=<span class="keyword">super_t</span>;</span><br><span class="line">        <span class="keyword">while</span>(now!=super_s) minf=min(minf,edge[pre[now]].cap-edge[pre[now]].flow),now=edge[pre[now]].from;</span><br><span class="line">        now=<span class="keyword">super_t</span>,ans+=<span class="number">1L</span>L*minf*dis[<span class="keyword">super_t</span>];</span><br><span class="line">        <span class="keyword">while</span>(now!=super_s) edge[pre[now]].flow+=minf,edge[pre[now]^<span class="number">1</span>].flow-=minf,now=edge[pre[now]].from;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t1;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;tot);</span><br><span class="line">    super_s=tot+tot+<span class="number">1</span>,<span class="keyword">super_t</span>=tot+tot+<span class="number">2</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=tot;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;t1);</span><br><span class="line">        add_edge(super_s,i,t1,<span class="number">0</span>);</span><br><span class="line">        add_edge(i+tot,<span class="keyword">super_t</span>,t1,<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">if</span>(i&lt;tot) add_edge(i+tot,i+tot+<span class="number">1</span>,oo,<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d%d%d%d"</span>,&amp;p,&amp;m,&amp;f,&amp;n,&amp;s);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=tot-m;i++) add_edge(i,i+m+tot,oo,f);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=tot-n;i++) add_edge(i,i+n+tot,oo,s);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=tot;i++) add_edge(super_s,i+tot,oo,p);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%lld"</span>,mincostflow());</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-        
-    
-
-    
-</div>
-
-
-                
-
-                <!-- Post Comments -->
-                
-                    
-                
+                    <!-- Isolation Header -->
+                    <header class="header">
+    <div class="header-wrapper">
+        <!-- Header Copyright -->
+        <div class="header-copyright">
+            <div class="header-site">
+                ©&nbsp;
+                <script type="text/javascript">
+                    var fd = new Date();
+                    document.write(fd.getFullYear());
+                </script>
+                &nbsp;Cupcake
             </div>
+            <!--
+            I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+            It will not impact the appearance and can give developers a lot of support :)
 
-            <!-- Post Prev & Next Nav -->
-            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-    <!-- Prev Nav -->
-    
-        <a href="/2018/03/08/「luogu2714」四元组统计/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            أحدث
-        </a>
-    
-
-    <!-- Section Spacer -->
-    <div class="section-spacer"></div>
-
-    <!-- Next Nav -->
-    
-        <a href="/2018/03/08/「luogu2764」最小路径覆盖问题/" id="post_nav-older" class="next-content">
-            أقدم
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
-    
-</nav>
-
+            很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+            它不会影响美观并可以给开发者很大的支持。 :)
+            -->
+            <div>
+                Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a>
+                <br>
+                Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a>
+            </div>
         </div>
-    </div>
 
-
-
-                    
-                        <!-- Overlay For Active Sidebar -->
-<div class="sidebar-overlay"></div>
-
-<!-- Material sidebar -->
-<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
-    <div id="sidebar-main">
-        <!-- Sidebar Header -->
-        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
-    <!-- Top bar -->
-    <div class="top-bar"></div>
-
-    <!-- Sidebar toggle button -->
-    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
-        <i class="material-icons">clear_all</i>
-        <span class="mdl-button__ripple-container">
-            <span class="mdl-ripple">
-            </span>
+        <!-- Header Title -->
+        <span class="header-title header-item">
+            <a href="/" title="Cupcake">
+                Cupcake
+            </a>
         </span>
-    </button>
 
-    <!-- Sidebar Avatar -->
-    <div class="sidebar-image">
-        <img src="/img/avatar.png" alt="Cupcake's avatar">
-    </div>
-
-    <!-- Sidebar Email -->
-    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
-        youremail@email.com
-        <b class="caret"></b>
-    </a>
-</div>
-
-
-        <!-- Sidebar Navigation  -->
-        <ul class="nav sidebar-nav">
-    <!-- User dropdown  -->
-    <li class="dropdown">
-        <ul id="settings-dropdown" class="dropdown-menu">
-            
-                <li>
-                    <a href="#" target="_blank" title="Email Me">
-                        
-                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
-                        
-                        Email Me
-                    </a>
-                </li>
-            
-        </ul>
-    </li>
-
-    <!-- Homepage -->
-    
-        <li id="sidebar-first-li">
-            <a href="/">
-                
-                    <i class="material-icons sidebar-material-icons">home</i>
-                
-                الرئيسية
-            </a>
-        </li>
+        <p class="header-slogan header-item">
         
-    
-
-    <!-- Archives  -->
-    
-        <li class="dropdown">
-            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
-                
-                    <i class="material-icons sidebar-material-icons">inbox</i>
-                
-                    أرشيف
-                <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-            <li>
-                <a class="sidebar_archives-link" href="/archives/2018/03/">March 2018<span class="sidebar_archives-count">29</span></a>
-            </ul>
-        </li>
+            
+                Hi, nice to meet you
+            
         
-    
+        </p>
 
-    <!-- Categories  -->
-    
+        <!-- Header Nav -->
+        <nav class="header-nav header-item">
+            <span class="header-nav-item">
+                <a href="/" title="Home">
+                    <span>主页</span>
+                </a>
+            </span>
 
-    <!-- Pages  -->
-    
+            <!-- Pages  -->
+            
+            
+        </nav>
 
-    <!-- Article Number  -->
-    
-</ul>
-
-
-        <!-- Sidebar Footer -->
-        <!--
-I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
-If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
-It will not impact the appearance and can give developers a lot of support :)
-
-很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
-如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
-它不会影响美观并可以给开发者很大的支持和动力。 :)
--->
-
-<!-- Sidebar Divider -->
-
-    <div class="sidebar-divider"></div>
-
-
-<!-- Theme Material -->
-
-    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
-        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-            سمة - Material
-            <span class="sidebar-badge badge-circle">i</span>
-        </div>
-    </a>
-
-
-<!-- Help & Support -->
-<!--
-
--->
-
-<!-- Feedback -->
-<!--
-
--->
-
-<!-- About Theme -->
-<!--
-
--->
-
-    </div>
-
-    <!-- Sidebar Image -->
-    
-
-</aside>
-
-                    
-
-                    
-                        <!-- Footer Top Button -->
-                        <div id="back-to-top" class="toTop-wrap">
-    <a href="#top" class="toTop">
-        <i class="material-icons footer_top-i">expand_less</i>
-    </a>
-</div>
-
-                    
-
-                    <!--Footer-->
-<footer class="mdl-mini-footer" id="bottom">
-    
-        <!-- Paradox Footer Left Section -->
-        <div class="mdl-mini-footer--left-section sns-list">
+        <!-- Header SNS -->
+        <div class="header-item header-sns_list">
     <!-- Twitter -->
     
         <a href="https://twitter.com/twitter" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
-                <span class="visuallyhidden">Twitter</span>
-            </button><!--
-     --></a>
+            <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+        </a>
     
 
     <!-- Facebook -->
     
         <a href="https://www.facebook.com/facebook" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
-                <span class="visuallyhidden">Facebook</span>
-            </button><!--
-     --></a>
+            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+        </a>
     
 
     <!-- Google + -->
     
         <a href="https://www.google.com/" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
-                <span class="visuallyhidden">Google Plus</span>
-            </button><!--
-     --></a>
+            <i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
+        </a>
     
 
     <!-- Weibo -->
@@ -741,42 +400,136 @@ It will not impact the appearance and can give developers a lot of support :)
     <!-- LinkedIn -->
     
 
-    <!-- Zhihu -->
-    
-
-    <!-- Bilibili -->
-    
-
     <!-- Telegram -->
     
+</div>
+
+    </div>
+</header>
+
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+
+                    <!-- Post TOC -->
+
     
-    <!-- V2EX -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+
+
+    <!-- Isolation Post Header -->
+    <!-- Post thumbnail -->
+    
+        <!-- Post Header Info -->
+        <div class="post-header_info without-thumbnail">
+            <!-- Author Avatar & Name -->
+            <img src="/img/avatar.png" class="avatar-img" width="44px" height="44px" alt="Cupcake's avatar">
+            <span class="name-span">Cupcake</span>
+        </div>
+
+        <!-- Null Thumbnail -->
+        <div class="post_thumbnail-null">
+    
+        </div>
+
+
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+
+    
+        <div class="post-content_wrapper">
+            <p class="post-title">
+                「luogu1251」餐巾计划问题
+            </p>
+            <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>一个餐厅在相继的$N$天里,每天需用的餐巾数不尽相同。假设第$i$天需要$r_i$块餐巾$(i=1,2,…,N)$。餐厅可以购买新的餐巾,每块餐巾的费用为$p$分;或者把旧餐巾送到快洗部,洗一块需$m$天,其费用为$f$分;或者送到慢洗部,洗一块需$n$天$(n&gt;m)$,其费用为$s$分$(s&lt;f)$。</p>
+<p>每天结束时,餐厅必须决定将多少块脏的餐巾送到快洗部,多少块餐巾送到慢洗部,以及多少块保存起来延期送洗。但是每天洗好的餐巾和购买的新餐巾数之和,要满足当天的需求量。</p>
+<p>试设计一个算法为餐厅合理地安排好$N$天中餐巾使用计划,使总的花费最小。</p>
+<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>拆点，把点i拆成$X_i$和$Y_i$。</p>
+<p>每个$X_i$向汇点$t$连一条容量为$r_i$，费用为0的边，表示每天要满足的要求。(这里涉及到一个贪心即每天恰好提供$r_i$块餐巾时总花费最小，因为我们总可以把餐巾留到下一天而不用支付额外的费用，所以这样做不会使方案更劣)</p>
+<p>源点$s$向每个$Y_i$连一条容量为$r_i$，费用为0的边，表示向网络中补充这一天使用后的餐巾。</p>
+<p>源点$s$向每个$X_i$连一条容量为正无穷，费用为$p$的边，表示购买新的餐巾。</p>
+<p>每个$Y_i$向$Y_{i+1}$连一条容量为正无穷，费用为0的边，表示把脏餐巾留到下一天。</p>
+<p>每个$Y_i$向$X_{i+m}$连一条容量为正无穷，费用为$f$的边，表示送到快洗部。</p>
+<p>每个$Y_i$向$X_{i+n}$连一条容量为正无穷，费用为$s$的边，表示送到慢洗部。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">4010</span>;</span><br><span class="line"><span class="keyword">const</span> ll oo=<span class="number">3e18</span>;</span><br><span class="line"><span class="keyword">int</span> tot,n,m,f,s,p,super_s,<span class="keyword">super_t</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Edge</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> from,to;</span><br><span class="line">    ll flow,cap,cost;</span><br><span class="line">    Edge(<span class="keyword">int</span> _from=<span class="number">0</span>,<span class="keyword">int</span> _to=<span class="number">0</span>,ll _flow=<span class="number">0</span>,ll _cap=<span class="number">0</span>,ll _cost=<span class="number">0</span>):from(_from),to(_to),flow(_flow),cap(_cap),cost(_cost)&#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line">Edge edge[<span class="number">40010</span>];</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;point[N];</span><br><span class="line"><span class="keyword">int</span> edge_tot;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">add_edge</span><span class="params">(<span class="keyword">int</span> f,<span class="keyword">int</span> t,ll c,ll cc)</span></span>&#123;</span><br><span class="line">    edge[edge_tot]=Edge(f,t,<span class="number">0</span>,c,cc);</span><br><span class="line">    point[f].push_back(edge_tot++);</span><br><span class="line">    edge[edge_tot]=Edge(t,f,<span class="number">0</span>,<span class="number">0</span>,-cc);</span><br><span class="line">    point[t].push_back(edge_tot++);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line">ll dis[N];</span><br><span class="line"><span class="keyword">int</span> pre[N];</span><br><span class="line"><span class="keyword">bool</span> inq[N];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">spfa</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">memset</span>(dis,<span class="number">127</span>/<span class="number">2</span>,<span class="keyword">sizeof</span>(dis));</span><br><span class="line">    <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt;q;</span><br><span class="line">    q.push(super_s);</span><br><span class="line">    dis[super_s]=<span class="number">0</span>,inq[super_s]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> x;</span><br><span class="line">    <span class="keyword">while</span>(!q.empty())&#123;</span><br><span class="line">        x=q.front();q.pop();</span><br><span class="line">        inq[x]=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;point[x].size();i++)&#123;</span><br><span class="line">            Edge&amp; e=edge[point[x][i]];</span><br><span class="line">            <span class="keyword">if</span>(e.cap&lt;=e.flow) <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">if</span>(dis[e.to]&gt;dis[x]+e.cost)&#123;</span><br><span class="line">                dis[e.to]=dis[x]+e.cost,pre[e.to]=point[x][i];</span><br><span class="line">                <span class="keyword">if</span>(!inq[e.to])&#123;q.push(e.to);inq[e.to]=<span class="number">1</span>;&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dis[<span class="keyword">super_t</span>]&lt;oo;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">ll <span class="title">mincostflow</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> now;</span><br><span class="line">    ll minf,ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(spfa())&#123;</span><br><span class="line">        minf=oo,now=<span class="keyword">super_t</span>;</span><br><span class="line">        <span class="keyword">while</span>(now!=super_s) minf=min(minf,edge[pre[now]].cap-edge[pre[now]].flow),now=edge[pre[now]].from;</span><br><span class="line">        now=<span class="keyword">super_t</span>,ans+=<span class="number">1L</span>L*minf*dis[<span class="keyword">super_t</span>];</span><br><span class="line">        <span class="keyword">while</span>(now!=super_s) edge[pre[now]].flow+=minf,edge[pre[now]^<span class="number">1</span>].flow-=minf,now=edge[pre[now]].from;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t1;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;tot);</span><br><span class="line">    super_s=tot+tot+<span class="number">1</span>,<span class="keyword">super_t</span>=tot+tot+<span class="number">2</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=tot;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;t1);</span><br><span class="line">        add_edge(super_s,i,t1,<span class="number">0</span>);</span><br><span class="line">        add_edge(i+tot,<span class="keyword">super_t</span>,t1,<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">if</span>(i&lt;tot) add_edge(i+tot,i+tot+<span class="number">1</span>,oo,<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d%d%d%d"</span>,&amp;p,&amp;m,&amp;f,&amp;n,&amp;s);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=tot-m;i++) add_edge(i,i+m+tot,oo,f);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=tot-n;i++) add_edge(i,i+n+tot,oo,s);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=tot;i++) add_edge(super_s,i+tot,oo,p);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%lld"</span>,mincostflow());</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            
+        </div>
     
 </div>
 
 
-        <!--Copyright-->
-        <div id="copyright">
-            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Cupcake
-            
-        </div>
+                
+                    <!-- Paradox Post Info -->
+                    
+                
 
-        <!-- Paradox Footer Right Section -->
-
-        <!--
-        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
-        It will not impact the appearance and can give developers a lot of support :)
-
-        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
-        它不会影响美观并可以给开发者很大的支持。 :)
-        -->
-
-        <div class="mdl-mini-footer--right-section">
-            <div>
-                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
-                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+                <!-- Post Comments -->
+                
+                    
+                
             </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/03/08/「luogu2714」四元组统计/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/03/08/「luogu2764」最小路径覆盖问题/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
         </div>
+    </div>
+
+
+
+                    
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
     
 </footer>
 
