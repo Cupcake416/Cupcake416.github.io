@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    
+    
+    <title>「BZOJ3572」[HNOI2014]世界树 | Cupcake9 | 所有命运赠送的礼物，早已在暗中标好了价格。</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.3.2">
+    
+    <script type="text/javascript">
+        // Data Center
+        var DC = {
+            reward:	true,
+            lv: JSON.parse('{"enable":true,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
+            g: JSON.parse('{"enable":false,"lazy":true,"owner":"codefine","repo":"gitment","oauth":{"client_id":null,"client_secret":null},"perPage":10}'),
+            d: JSON.parse('{"app_id":null}')
+        };
+    </script>
+    <script type="text/javascript">
+        window.lazyScripts=[];
+    </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+
+<body>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      
+      <img src="/img/brand.jpg" class="brand-bg">
+      
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Cupcake</h5>
+          <a href="mailto:2573865855@qq.com" title="2573865855@qq.com" class="mail">
+            
+              <span>2</span>
+            
+              <span>5</span>
+            
+              <span>7</span>
+            
+              <span>3</span>
+            
+              <span>8</span>
+            
+              <span>6</span>
+            
+              <span>5</span>
+            
+              <span>8</span>
+            
+              <span>5</span>
+            
+              <span>5</span>
+            
+              <span>@</span>
+            
+              <span>q</span>
+            
+              <span>q</span>
+            
+              <span>.</span>
+            
+              <span>c</span>
+            
+              <span>o</span>
+            
+              <span>m</span>
+            
+          </a>
+        </hgroup>
+        
+        <ul class="menu-link">
+          
+              <li>
+                <a href="https://github.com/codefine" target="_blank">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </li>
+            
+        </ul>
+        
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                HOME
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                CATEGORIES
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                TAGS
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                ARCHIVES
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-plus-square"></i>
+                CUSTOM
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row clearfix">
+        <a href="javascript:;" class="header-icon pull-left waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <span>「BZOJ3572」[HNOI2014]世界树</span>
+            
+        </div>
+        
+        <a href="javascript:;" id="site_search_btn" class="header-icon pull-right waves-effect waves-circle waves-light">
+            <i class="icon icon-lg icon-search"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+    <img src="/img/1.JPG" class="header-bg">
+    <div class="container fade-scale">
+        <h1 class="title">「BZOJ3572」[HNOI2014]世界树</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-03-08T05:23:58.000Z" itemprop="datePublished" class="page-time">
+  2018-03-08
+</time>
+
+
+            
+        </h5>
+        
+    </div>
+    
+
+</header>
+
+<div id="site_search">
+    <div class="search-title clearfix">
+        <span class="pull-left">
+          <i class="icon icon-lg icon-search"></i>
+        </span>
+        <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control pull-left"/>
+        <a href="javascript:;" class="close pull-right waves-effect waves-circle waves-light">
+          <i class="icon icon-lg icon-close"></i>
+        </a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<div class="container body-wrap">
+    <article id="post-「BZOJ3572」-HNOI2014-世界树"
+  class="post-article article-type-post" itemprop="blogPost">
+    <div class="post-card">
+        <h1 class="post-card-title">「BZOJ3572」[HNOI2014]世界树</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-03-08 13:23:58" datetime="2018-03-08T05:23:58.000Z"  itemprop="datePublished">2018-03-08</time>
+
+            
+
+
+            
+	<span id="/2018/03/08/「BZOJ3572」-HNOI2014-世界树/" class="leancloud_visitors" data-flag-title="「BZOJ3572」[HNOI2014]世界树" title="「BZOJ3572」[HNOI2014]世界树">
+		
+			<i class="icon icon-eye"></i>
+		
+		<span class="leancloud-visitors-count"></span>
+	</span>
+ 
+
+            
+
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            
+            <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给定一棵$n$节点树，q次询问，每次询问钦定$m_i$个点，树上每个节点被离其最近的钦定点管辖，问每个钦定点要管辖多少个节点。</p>
+<h3 id="数据范围"><a href="#数据范围" class="headerlink" title="*数据范围"></a>*数据范围</h3><p>$n\leq$300000, $q\leq$300000,$m_1+m_2+…+m_q\leq$300000</p>
+<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>注意数据范围，不难看出要构出虚树。</p>
+<p>先求出虚树上的每个点被哪个点管辖，用两遍dp实现。先用儿子向上更新，再用父亲向下更新(顺序不能颠倒，否则无法处理管辖兄弟的情况)。</p>
+<p>然后考虑虚树边上的点，分两种情况：<br>    (1)若虚树边两端被同一个点管辖，那么这条边上的所有点都被这个点管辖。<br>    (2)否则虚树边上存在一个分界点，分界点两侧分别被那边的点管辖，我们可以倍增地找到这个分界点。</p>
+<p>统计答案即可。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">300010</span>,P=<span class="number">25</span>,oo=<span class="number">2e9</span>;</span><br><span class="line"><span class="keyword">int</span> n,m,q,a[N];</span><br><span class="line"><span class="keyword">int</span> fa[N][P],dep[N],id[N],siz[N],dfn;</span><br><span class="line"><span class="keyword">int</span> ans[N],b[N],c[N],f[N],d[N],w[N];</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Edge</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> from,to,v,next;</span><br><span class="line">    Edge(<span class="keyword">int</span> _from=<span class="number">0</span>,<span class="keyword">int</span> _to=<span class="number">0</span>,<span class="keyword">int</span> _v=<span class="number">0</span>,<span class="keyword">int</span> _next=<span class="number">0</span>):from(_from),to(_to),v(_v),next(_next)&#123;&#125;</span><br><span class="line">&#125;edge[N&lt;&lt;<span class="number">1</span>];</span><br><span class="line"><span class="keyword">int</span> edge_tot,last[N];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">add_edge</span><span class="params">(<span class="keyword">int</span> f,<span class="keyword">int</span> t,<span class="keyword">int</span> vv)</span></span>&#123;edge[++edge_tot]=Edge(f,t,vv,last[f]),last[f]=edge_tot;<span class="keyword">return</span>;&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">cmp</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;<span class="keyword">return</span> id[x]&lt;id[y];&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> k,<span class="keyword">int</span> father,<span class="keyword">int</span> d)</span></span>&#123;</span><br><span class="line">    fa[k][<span class="number">0</span>]=father,dep[k]=d,id[k]=++dfn,siz[k]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=last[k];i;i=edge[i].next)&#123;</span><br><span class="line">        <span class="keyword">if</span>(edge[i].to==father) <span class="keyword">continue</span>;</span><br><span class="line">        dfs(edge[i].to,k,d+<span class="number">1</span>);</span><br><span class="line">        siz[k]+=siz[edge[i].to];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getlca</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(dep[x]&lt;dep[y]) swap(x,y);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">19</span>;i&gt;=<span class="number">0</span>;i--) <span class="keyword">if</span>(dep[fa[x][i]]&gt;=dep[y]) x=fa[x][i];</span><br><span class="line">    <span class="keyword">if</span>(x==y) <span class="keyword">return</span> x;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">19</span>;i&gt;=<span class="number">0</span>;i--) <span class="keyword">if</span>(fa[x][i]!=fa[y][i]) x=fa[x][i],y=fa[y][i];</span><br><span class="line">    <span class="keyword">return</span> fa[x][<span class="number">0</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">getson</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">19</span>;i&gt;=<span class="number">0</span>;i--) <span class="keyword">if</span>(dep[fa[y][i]]&gt;dep[x]) y=fa[y][i];</span><br><span class="line">    <span class="keyword">return</span> y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> sta[N],top;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">build</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> lca;</span><br><span class="line">    <span class="keyword">if</span>(f[<span class="number">1</span>]!=<span class="number">1</span>) sta[top++]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">        <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(!top) <span class="keyword">break</span>;</span><br><span class="line">            lca=getlca(sta[top<span class="number">-1</span>],a[i]);</span><br><span class="line">            <span class="keyword">if</span>(lca==sta[top<span class="number">-1</span>]) <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                top--;</span><br><span class="line">                <span class="keyword">if</span>(id[sta[top<span class="number">-1</span>]]&gt;=id[lca])&#123;</span><br><span class="line">                    add_edge(sta[top<span class="number">-1</span>],sta[top],siz[getson(sta[top<span class="number">-1</span>],sta[top])]-siz[sta[top]]);</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    add_edge(lca,sta[top],siz[getson(lca,sta[top])]-siz[sta[top]]);</span><br><span class="line">                    sta[top++]=lca;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        sta[top++]=a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(top&gt;=<span class="number">2</span>)&#123;</span><br><span class="line">        top--;</span><br><span class="line">        add_edge(sta[top<span class="number">-1</span>],sta[top],siz[getson(sta[top<span class="number">-1</span>],sta[top])]-siz[sta[top]]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs_dp1</span><span class="params">(<span class="keyword">int</span> k,<span class="keyword">int</span> father)</span></span>&#123;</span><br><span class="line">    c[++dfn]=k,w[k]=siz[k];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=last[k];i;i=edge[i].next)&#123;</span><br><span class="line">        <span class="keyword">if</span>(edge[i].to==father) <span class="keyword">continue</span>;</span><br><span class="line">        w[k]-=siz[edge[i].to]+edge[i].v;</span><br><span class="line">        dfs_dp1(edge[i].to,k);</span><br><span class="line">        <span class="keyword">if</span>(d[k]&gt;d[edge[i].to]+dep[edge[i].to]-dep[k]) d[k]=d[edge[i].to]+dep[edge[i].to]-dep[k],f[k]=f[edge[i].to];</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(d[k]==d[edge[i].to]+dep[edge[i].to]-dep[k]&amp;&amp;f[edge[i].to]&lt;f[k]) f[k]=f[edge[i].to];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs_dp2</span><span class="params">(<span class="keyword">int</span> k,<span class="keyword">int</span> father)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=last[k];i;i=edge[i].next)&#123;</span><br><span class="line">        <span class="keyword">if</span>(edge[i].to==father) <span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">if</span>(d[edge[i].to]&gt;d[k]+dep[edge[i].to]-dep[k]) d[edge[i].to]=d[k]+dep[edge[i].to]-dep[k],f[edge[i].to]=f[k];</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(d[edge[i].to]==d[k]+dep[edge[i].to]-dep[k]&amp;&amp;f[edge[i].to]&gt;f[k]) f[edge[i].to]=f[k];</span><br><span class="line">        dfs_dp2(edge[i].to,k);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t1=edge[k].from,t2=edge[k].to,nxt;</span><br><span class="line">    <span class="keyword">if</span>(f[t1]==f[t2])&#123;ans[f[t1]]+=edge[k].v;<span class="keyword">return</span>;&#125;</span><br><span class="line">    <span class="keyword">int</span> mid=t2;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">19</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">        nxt=fa[mid][i];</span><br><span class="line">        <span class="keyword">if</span>(id[nxt]&lt;id[t1]) <span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">if</span>(d[t1]+dep[nxt]-dep[t1]&gt;d[t2]+dep[t2]-dep[nxt]||(d[t1]+dep[nxt]-dep[t1]==d[t2]+dep[t2]-dep[nxt])&amp;&amp;f[t2]&lt;f[t1]) mid=nxt;</span><br><span class="line">    &#125;</span><br><span class="line">    ans[f[t1]]+=siz[getson(t1,mid)]-siz[mid];</span><br><span class="line">    ans[f[t2]]+=siz[mid]-siz[t2];</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">clear</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=dfn;i++) last[c[i]]=f[c[i]]=ans[c[i]]=w[c[i]]=<span class="number">0</span>,d[c[i]]=oo;</span><br><span class="line">    edge_tot=dfn=top=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">query</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t1,t2;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;m);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a[i]),b[i]=a[i],f[a[i]]=a[i],d[a[i]]=<span class="number">0</span>;</span><br><span class="line">    sort(a+<span class="number">1</span>,a+m+<span class="number">1</span>,cmp);</span><br><span class="line">    build();</span><br><span class="line">    dfs_dp1(<span class="number">1</span>,<span class="number">0</span>);dfs_dp2(<span class="number">1</span>,<span class="number">0</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=dfn;i++) ans[f[c[i]]]+=w[c[i]];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=edge_tot;i++) solve(i);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++) <span class="built_in">printf</span>(<span class="string">"%d "</span>,ans[b[i]]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">    clear();</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t1,t2;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;t1,&amp;t2);</span><br><span class="line">        add_edge(t1,t2,<span class="number">0</span>);add_edge(t2,t1,<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    dfs(<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">19</span>;i++)</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=n;j++)</span><br><span class="line">            fa[j][i]=fa[fa[j][i<span class="number">-1</span>]][i<span class="number">-1</span>];</span><br><span class="line">    <span class="built_in">memset</span>(last,<span class="number">0</span>,<span class="keyword">sizeof</span>(last));<span class="built_in">memset</span>(d,<span class="number">127</span>/<span class="number">2</span>,<span class="keyword">sizeof</span>(d));</span><br><span class="line">    edge_tot=dfn=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;q);</span><br><span class="line">    <span class="keyword">while</span>(q--) query();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        </div>
+        
+<blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-07-16T15:52:38.983Z" itemprop="dateUpdated">2018-07-16 23:52:38</time>
+</span><br>
+
+
+        
+        转载注明出处，原文地址：<a href="/2018/03/08/「BZOJ3572」-HNOI2014-世界树/" target="_blank" rel="external">http://yoursite.com/2018/03/08/「BZOJ3572」-HNOI2014-世界树/</a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="Cupcake">
+            Cupcake
+        </a>
+    </footer>
+</blockquote>
+
+        
+            <div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+            
+        
+        <div class="post-footer">
+            
+            <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/03/08/「BZOJ3572」-HNOI2014-世界树/&title=《「BZOJ3572」[HNOI2014]世界树》 — Cupcake9&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/03/08/「BZOJ3572」-HNOI2014-世界树/&title=《「BZOJ3572」[HNOI2014]世界树》 — Cupcake9&source=一只蒟蒻" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+        </div>
+        
+            
+
+
+        
+    </div>
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="prev">
+      <a href="/2018/03/08/「POJ3352」Road Construction/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">「POJ3352」Road Construction</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="next">
+      <a href="/2018/03/08/「luogu1880」-NOI1995-石子合并/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">「luogu1880」[NOI1995]石子合并</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+    
+    
+        <aside class="post-widget">
+            <nav class="post-toc-wrap" id="post-toc">
+                <strong>目录</strong>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题目大意"><span class="post-toc-number">1.</span> <span class="post-toc-text">题目大意</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据范围"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">*数据范围</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解析"><span class="post-toc-number">2.</span> <span class="post-toc-text">解析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码"><span class="post-toc-number">3.</span> <span class="post-toc-text">代码</span></a></li></ol>
+            </nav>
+            <div class="toc-bar"><div>
+        </aside>
+    
+</article>
+
+    <div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        我们一起来让这个世界有趣一点
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/reward-wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/reward-wechat.jpg" data-alipay="/img/reward-alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+    
+</div>
+
+        <footer class="footer">
+    
+    <div class="top">
+        
+            <p>
+    <span>Links：</span>
+    
+    <span class="blogroll-item">
+        <a href="https://www.lujingtao.com" target="_blank">HOME</a>
+    </span>
+    
+</p>
+
+        
+    </div>
+    
+    <div class="bottom">
+        <p>
+            <span>
+                Cupcake &copy; 2017 - 2018
+            </span>
+        		
+           	
+            
+            
+            <span>
+	            Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/codefine/hexo-theme-mellow" target="_blank">mellow</a>
+            </span>
+            
+            
+            
+
+            
+                
+<span class="site-uv" title="总访客量">
+    <i class="icon icon-user"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_uv"></i>
+</span>
+
+
+<span class="site-pv" title="总访问量">
+    <i class="icon icon-eye"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_pv"></i>
+</span>
+
+            
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/03/08/「BZOJ3572」-HNOI2014-世界树/&title=《「BZOJ3572」[HNOI2014]世界树》 — Cupcake9&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/03/08/「BZOJ3572」-HNOI2014-世界树/&title=《「BZOJ3572」[HNOI2014]世界树》 — Cupcake9&source=一只蒟蒻" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACvElEQVR42u3awW7bMBAEUP//T6dATwUaOTO7ZJMCTydDjiU+BiCJ2X294uvj9/Xn56c7f99//7Sn5ye/Onbh4eHhjYb+dL0nJVPw9MxkDPmEPj4fDw8P7xov3wyekO8X7tlb9lsOHh4e3vfyklNre8rND814eHh4/y/vaVjJRrKJQvDw8PB+Gi8/wubH3NmwZmM4kLXg4eHhdTlqXQD73s/X63t4eHh4o6p6XrjavDE/3NejxcPDw7vAa4/IeQibMJKp2UfDeHh4eGd5yWtyZN4y9X65n036J2PGw8PDu8DbLNN7dv6rNrDAw8PDu81rX5AXvdpD9qxIVjcQ4OHh4S14bdF9VrzPZ/pULPLKdyQ8PDy8kjcLC9qmq+TbWQmtTqnx8PDwjvJmxa1hNLAoetVtWHh4eHhHeXm0OmvGSraQfQzx+M/Aw8PDu8BrD6zJCrxpHci3gdk48fDw8M7y2jCiLZ4lfz8LNYr6Hh4eHt6a1xaWNoxZSDFrZcDDw8O7xztV6GpbBPJNoo02PrmDh4eHd5Q3K1zNymNtaW0fMePh4eH9e177ynzR3zRjFdOHh4eHd4HXFqLaNoL8oNy2fOUtXHh4eHj3eJsyVdtENSt0JdtSVNnDw8PDO8rLG6RmrQZJFHuqYIaHh4d3j9cGsvvGqXx7mG1Xj0/Aw8PDW/PadoH8xW1APJviL/B4eHh4l3nt4/KC2X7XygMIPDw8vNu8WcDaxgGz0trZAh4eHh7eKd5HebWD2zcBrCJgPDw8vAu8TefSrIkqmaz84N42FuDh4eGd4u1j3LZdIF/u85ijOHHj4eHhHeJtgtq8iJU8Z3/sxsPDw/s5vH1bwKxhaxU34+Hh4f0A3r40NUtKhgduPDw8vGu8TWQwi2iTDSOJIb64g4eHh3eBt8lC80HkC/omyHjNLjw8PLyU9wsddX2CIZWj/wAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+    
+    <!-- main-js -->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/plugins/fastclick.js?v=1.3.2"></script>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script type="text/javascript" src="/js/method.js?v=1.3.2"></script>
+<script type="text/javascript" src="/js/blog.js?v=1.3.2"></script>
+
+<!-- third-party -->
+
+
+
+
+
+<script type="text/javascript" src="/js/plugins/local_search.js?v=1.3.2"></script>
+<script type="text/javascript">
+	var search_path = "search.xml";
+	if (search_path.length === 0) {
+		search_path = "search.xml";
+	}
+	var path = "/" + search_path;
+	searchFunc(path, "local-search-input", "local-search-result");
+</script>
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+
+
+
+<script type="text/javascript" src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script type="text/javascript" src="/js/plugins/leancloud_visitors.js?v=1.3.2"></script>
+
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+    
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>
