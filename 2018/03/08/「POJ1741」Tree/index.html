@@ -225,7 +225,7 @@
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             
-            <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给一棵带边权的树，求有多少点对之间距离小于等于$k$。</p>
+            <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给一棵带边权的树，求有多少点对之间距离小于等于$k$。<br><a id="more"></a></p>
 <h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>所谓点分治，就是每次选取一个根，把树分为几棵子树和一个根，于是一个树上问题就被分解为子树内的子问题和一个与根有关的问题，这样递归下去，直到问题解决。</p>
 <p>以这题为例，“与根有关的问题” 就是求经过根节点且距离小于等于$k$的路径条数。</p>
 <p>具体求法是dfs一遍把每个节点距根的距离放进一个数组排序一下，再拿两个指针扫一遍统计出答案，当然这样会把起点和终点在同一子树的不合法路径算进去，我们需要减去这些路径。</p>
@@ -238,7 +238,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-07-17T12:10:57.339Z" itemprop="dateUpdated">2018-07-17 20:10:57</time>
+    最后更新时间：<time datetime="2018-07-23T12:06:02.779Z" itemprop="dateUpdated">2018-07-23 20:06:02</time>
 </span><br>
 
 
@@ -276,7 +276,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/03/08/「POJ1741」Tree/&title=《「POJ1741」Tree》 — Cupcake6&source=一只蒟蒻" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/03/08/「POJ1741」Tree/&title=《「POJ1741」Tree》 — Cupcake6&source=题目大意给一棵带边权的树，求有多少点对之间距离小于等于$k$。" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -392,7 +392,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/03/08/「POJ1741」Tree/&title=《「POJ1741」Tree》 — Cupcake6&source=一只蒟蒻" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/03/08/「POJ1741」Tree/&title=《「POJ1741」Tree》 — Cupcake6&source=题目大意给一棵带边权的树，求有多少点对之间距离小于等于$k$。" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>

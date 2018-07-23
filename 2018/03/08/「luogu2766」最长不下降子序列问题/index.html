@@ -228,7 +228,7 @@
             <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给定正整数序列$x_1,…,x_n$ 。</p>
 <p>(1) 计算其最长不下降子序列的长度$s$。</p>
 <p>(2) 计算从给定的序列中最多可取出多少个长度为$s$的不下降子序列。</p>
-<p>(3) 如果允许在取出的序列中多次使用$x_1$和$x_n$，则从给定序列中最多可取出多少个长度为$s$的不下降子序列。</p>
+<p>(3) 如果允许在取出的序列中多次使用$x_1$和$x_n$，则从给定序列中最多可取出多少个长度为$s$的不下降子序列。<br><a id="more"></a></p>
 <h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>第一问用动态规划解决,记答案为$ans_1$,保留$f[i]$供下面建模用。</p>
 <p>第二问可以看出是一个求路径覆盖数的问题，要求路径长度为$ans_1$。</p>
 <p>建模：<br>(1) 把每个点拆成$i$和$i’$,$i$向$i’$连一条边。<br>(2) 对于所有满足$i&lt;j$且$a[j]\leq a[i]$且$f[i]==f[j]-1$的点，$i’$向$j$连一条边。<br>(3) 源点$s$向$f[i]==1$的点$i$连一条边，$f[i]==ans_1$的点$i’$向汇点$t$连一条边。</p>
@@ -241,7 +241,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-07-14T14:42:16.690Z" itemprop="dateUpdated">2018-07-14 22:42:16</time>
+    最后更新时间：<time datetime="2018-07-23T12:05:59.119Z" itemprop="dateUpdated">2018-07-23 20:05:59</time>
 </span><br>
 
 
@@ -279,7 +279,9 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/03/08/「luogu2766」最长不下降子序列问题/&title=《「luogu2766」最长不下降子序列问题》 — Cupcake6&source=一只蒟蒻" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/03/08/「luogu2766」最长不下降子序列问题/&title=《「luogu2766」最长不下降子序列问题》 — Cupcake6&source=题目大意给定正整数序列$x_1,…,x_n$ 。
+(1) 计算其最长不下降子序列的长度$s$。
+(2) 计算从给定的序列中最多可取出多少个长度为$s$的不..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -395,7 +397,9 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/03/08/「luogu2766」最长不下降子序列问题/&title=《「luogu2766」最长不下降子序列问题》 — Cupcake6&source=一只蒟蒻" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/03/08/「luogu2766」最长不下降子序列问题/&title=《「luogu2766」最长不下降子序列问题》 — Cupcake6&source=题目大意给定正整数序列$x_1,…,x_n$ 。
+(1) 计算其最长不下降子序列的长度$s$。
+(2) 计算从给定的序列中最多可取出多少个长度为$s$的不..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
