@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    
+    
+    <title>「BZOJ2038」小Z的袜子 | Cupcake | 所有命运赠送的礼物，早已在暗中标好了价格。</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.3.2">
+    
+    <script type="text/javascript">
+        // Data Center
+        var DC = {
+            reward:	false,
+            lv: JSON.parse('{"enable":true,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
+            g: JSON.parse('{"enable":false,"lazy":true,"owner":"codefine","repo":"gitment","oauth":{"client_id":null,"client_secret":null},"perPage":10}'),
+            d: JSON.parse('{"app_id":null}')
+        };
+    </script>
+    <script type="text/javascript">
+        window.lazyScripts=[];
+    </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+
+<body>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      
+      <img src="/img/brand.jpg" class="brand-bg">
+      
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Cupcake</h5>
+          <a href="mailto:2573865855@qq.com" title="2573865855@qq.com" class="mail">
+            
+              <span>2</span>
+            
+              <span>5</span>
+            
+              <span>7</span>
+            
+              <span>3</span>
+            
+              <span>8</span>
+            
+              <span>6</span>
+            
+              <span>5</span>
+            
+              <span>8</span>
+            
+              <span>5</span>
+            
+              <span>5</span>
+            
+              <span>@</span>
+            
+              <span>q</span>
+            
+              <span>q</span>
+            
+              <span>.</span>
+            
+              <span>c</span>
+            
+              <span>o</span>
+            
+              <span>m</span>
+            
+          </a>
+        </hgroup>
+        
+        <ul class="menu-link">
+          
+              <li>
+                <a href="https://github.com/Cupcake416" target="_blank">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </li>
+            
+        </ul>
+        
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                HOME
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                ARCHIVES
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/about"  >
+                <i class="icon icon-lg icon-user"></i>
+                ABOUT
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row clearfix">
+        <a href="javascript:;" class="header-icon pull-left waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <span>「BZOJ2038」小Z的袜子</span>
+            
+        </div>
+        
+        <a href="javascript:;" id="site_search_btn" class="header-icon pull-right waves-effect waves-circle waves-light">
+            <i class="icon icon-lg icon-search"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+    <!--<img src="/img/1.JPG" class="header-bg">-->
+    <div class="header-bg">;
+    <div class="container fade-scale">
+        <h1 class="title">「BZOJ2038」小Z的袜子</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-03-08T08:43:33.000Z" itemprop="datePublished" class="page-time">
+  2018-03-08
+</time>
+
+
+            
+        </h5>
+        
+    </div>
+    
+
+</header>
+
+<div id="site_search">
+    <div class="search-title clearfix">
+        <span class="pull-left">
+          <i class="icon icon-lg icon-search"></i>
+        </span>
+        <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control pull-left"/>
+        <a href="javascript:;" class="close pull-right waves-effect waves-circle waves-light">
+          <i class="icon icon-lg icon-close"></i>
+        </a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<div class="container body-wrap">
+    <article id="post-「BZOJ2038」小Z的袜子"
+  class="post-article article-type-post" itemprop="blogPost">
+    <div class="post-card">
+        <h1 class="post-card-title">「BZOJ2038」小Z的袜子</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-03-08 16:43:33" datetime="2018-03-08T08:43:33.000Z"  itemprop="datePublished">2018-03-08</time>
+
+            
+
+
+            
+	<span id="/2018/03/08/「BZOJ2038」小Z的袜子/" class="leancloud_visitors" data-flag-title="「BZOJ2038」小Z的袜子" title="「BZOJ2038」小Z的袜子">
+		
+			<i class="icon icon-eye"></i>
+		
+		<span class="leancloud-visitors-count"></span>
+	</span>
+ 
+
+            
+
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            
+            <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给一个长度为$N$的颜色序列，从1到$N$编号。问在区间[L,R]中任选两个元素，这两个元素颜色相同的概率。有多次询问。<br><a id="more"></a></p>
+<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>想要得到答案，我们需要快速计算出区间内每种颜色的数量。</p>
+<p>而当我们知道[L,R]的答案时，可以快速计算出[L-1,R],[L+1,R],[L,R-1],[L,R+1]的答案，这正是莫队算法擅长处理的情况！</p>
+<p>莫队算法的步骤如下：<br>(1)把序列分为$\sqrt{n}$个块，记$bel[i]$为$i$所在的块。<br>(2)把询问的区间以$bel[l]$为第一关键字，$r$为第二关键字排序。<br>(3)按排序后的顺序计算出答案即可。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">50010</span>;</span><br><span class="line"><span class="keyword">int</span> n,m,c[N],bel[N],siz,cnt[N];</span><br><span class="line">ll ans1[N],ans2[N];</span><br><span class="line"><span class="function">ll <span class="title">gcd</span><span class="params">(ll x,ll y)</span></span>&#123;<span class="keyword">return</span> y?gcd(y,x%y):x;&#125;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> l,r,id;</span><br><span class="line">    <span class="keyword">bool</span> <span class="keyword">operator</span>&lt;(<span class="keyword">const</span> Node&amp; k)<span class="keyword">const</span>&#123;<span class="keyword">return</span> bel[l]==bel[k.l]?r&lt;k.r:l&lt;k.l;&#125;</span><br><span class="line">&#125;que[N];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">    siz=<span class="built_in">sqrt</span>(n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;c[i]),bel[i]=i/siz+<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++) <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;que[i].l,&amp;que[i].r),que[i].id=i;</span><br><span class="line">    sort(que+<span class="number">1</span>,que+m+<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">int</span> ql=<span class="number">1</span>,qr=<span class="number">0</span>;</span><br><span class="line">    ll sum1=<span class="number">0</span>,sum2=<span class="number">0</span>,len=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">        <span class="keyword">while</span>(qr&lt;que[i].r)&#123;</span><br><span class="line">            qr++;</span><br><span class="line">            sum1+=<span class="number">2</span>*cnt[c[qr]],cnt[c[qr]]++;</span><br><span class="line">            sum2+=<span class="number">2</span>*len,len++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(ql&gt;que[i].l)&#123;</span><br><span class="line">            ql--;</span><br><span class="line">            sum1+=<span class="number">2</span>*cnt[c[ql]],cnt[c[ql]]++;</span><br><span class="line">            sum2+=<span class="number">2</span>*len,len++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(qr&gt;que[i].r)&#123;</span><br><span class="line">            sum1-=<span class="number">2</span>*cnt[c[qr]]<span class="number">-2</span>,cnt[c[qr]]--;</span><br><span class="line">            sum2-=<span class="number">2</span>*len<span class="number">-2</span>,len--;</span><br><span class="line">            qr--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(ql&lt;que[i].l)&#123;</span><br><span class="line">            sum1-=<span class="number">2</span>*cnt[c[ql]]<span class="number">-2</span>,cnt[c[ql]]--;</span><br><span class="line">            sum2-=<span class="number">2</span>*len<span class="number">-2</span>,len--;</span><br><span class="line">            ql++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(que[i].l==que[i].r||!sum1)</span><br><span class="line">            ans1[que[i].id]=<span class="number">0</span>,ans2[que[i].id]=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            ll g=gcd(sum1,sum2);</span><br><span class="line">            ans1[que[i].id]=sum1/g,ans2[que[i].id]=sum2/g;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++) <span class="built_in">printf</span>(<span class="string">"%lld/%lld\n"</span>,ans1[i],ans2[i]);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        </div>
+        
+<blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-07-23T12:05:04.329Z" itemprop="dateUpdated">2018-07-23 20:05:04</time>
+</span><br>
+
+
+        
+        转载注明出处，原文地址：<a href="/2018/03/08/「BZOJ2038」小Z的袜子/" target="_blank" rel="external">http://yoursite.com/2018/03/08/「BZOJ2038」小Z的袜子/</a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="Cupcake">
+            Cupcake
+        </a>
+    </footer>
+</blockquote>
+
+        
+        <div class="post-footer">
+            
+            <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/03/08/「BZOJ2038」小Z的袜子/&title=《「BZOJ2038」小Z的袜子》 — Cupcake&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/03/08/「BZOJ2038」小Z的袜子/&title=《「BZOJ2038」小Z的袜子》 — Cupcake&source=题目大意给一个长度为$N$的颜色序列，从1到$N$编号。问在区间[L,R]中任选两个元素，这两个元素颜色相同的概率。有多次询问。" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+        </div>
+        
+            
+
+
+        
+    </div>
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="prev">
+      <a href="/2018/03/08/「BZOJ2120」数颜色/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">「BZOJ2120」数颜色</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="next">
+      <a href="/2018/03/08/「BZOJ2879」-Noi2012-美食节/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">「BZOJ2879」[Noi2012]美食节</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+    
+    
+        <aside class="post-widget">
+            <nav class="post-toc-wrap" id="post-toc">
+                <strong>目录</strong>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题目大意"><span class="post-toc-number">1.</span> <span class="post-toc-text">题目大意</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解析"><span class="post-toc-number">2.</span> <span class="post-toc-text">解析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码"><span class="post-toc-number">3.</span> <span class="post-toc-text">代码</span></a></li></ol>
+            </nav>
+            <div class="toc-bar"><div>
+        </aside>
+    
+</article>
+
+</div>
+
+        <footer class="footer">
+    
+    <div class="top">
+        
+            <p>
+    <span>Links：</span>
+    
+    <span class="blogroll-item">
+        <a href="https://www.lujingtao.com" target="_blank">HOME</a>
+    </span>
+    
+</p>
+
+        
+    </div>
+    
+    <div class="bottom">
+        <p>
+            <span>
+                Cupcake &copy; 2018
+            </span>
+        		
+           	
+            
+            
+            
+            
+
+            
+                
+<span class="site-uv" title="总访客量">
+    <i class="icon icon-user"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_uv"></i>
+</span>
+
+
+<span class="site-pv" title="总访问量">
+    <i class="icon icon-eye"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_pv"></i>
+</span>
+
+            
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/03/08/「BZOJ2038」小Z的袜子/&title=《「BZOJ2038」小Z的袜子》 — Cupcake&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/03/08/「BZOJ2038」小Z的袜子/&title=《「BZOJ2038」小Z的袜子》 — Cupcake&source=题目大意给一个长度为$N$的颜色序列，从1到$N$编号。问在区间[L,R]中任选两个元素，这两个元素颜色相同的概率。有多次询问。" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACI0lEQVR42u3aO3KDUAwFUO9/006bJnAl4cxY71B5PGA4FLJ+r1d8vH8dvXOS75O7jA4MDIyvZbwvj+Rmk8857K9nw8DAOIdR/bnybeIwnYAxMDAwckYSWK/xyZkYGBgYOSO/KmFPkkgMDIwzGUkR20sW85A9Sj0xMDBWM/JS8/8/f2S+gYGB8VWM9+C4ThmrqeTkeTAwMHYzqkGwGhbz8nXSpMPAwNjN6DXaqsGxx0iadxgYGCcwesVqb2z5aTwGBsYJjGqZOlkdS1LPZnqKgYGxjjEZB1aDbG/wEIExMDAOYMwXwqpFZlIY52tkGBgYZzKS5tpkCSwfCUSrYBgYGKsZT6075P28ahuuGXYxMDDWMfJ0sNpE6+2gVgM9BgbGCYzqckO10Z8096/x0SvDwMBYyuitO/SKz+orKCxbYGBgHMlIkrbqqGDyam5aeBgYGKsZvZWIXiMsecRe8MXAwNjNuH6sp0rTp4rhm2EABgbGUka0HpoXk4OF1MmCLAYGxm5G8rj5qLKaDvZSxpvhJQYGxjrGU2E0v1nyTXM5AwMDYyljMm7Mg3VvsSx/ERgYGLsZvQA3GQP0rn0sWGNgYHwtoxpkozZ9sa1fDbjlfw8MDIwVjOSn8wbZzSyieGY0VMDAwMCIw1+eFOapZ7TEhoGBgTEIqb26uRzKMTAwDmBMhgGjCWpxdeMmNcTAwFjKqJaOeQMuuU2SdD71EjEwML6Q8QM7MVH3ZjHNWgAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+    
+    <!-- main-js -->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/plugins/fastclick.js?v=1.3.2"></script>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script type="text/javascript" src="/js/method.js?v=1.3.2"></script>
+<script type="text/javascript" src="/js/blog.js?v=1.3.2"></script>
+
+<!-- third-party -->
+
+
+
+
+
+<script type="text/javascript" src="/js/plugins/local_search.js?v=1.3.2"></script>
+<script type="text/javascript">
+	var search_path = "search.xml";
+	if (search_path.length === 0) {
+		search_path = "search.xml";
+	}
+	var path = "/" + search_path;
+	searchFunc(path, "local-search-input", "local-search-result");
+</script>
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+
+
+
+<script type="text/javascript" src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script type="text/javascript" src="/js/plugins/leancloud_visitors.js?v=1.3.2"></script>
+
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+    
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>
