@@ -41,7 +41,7 @@
       <img src="/img/brand.jpg" class="brand-bg">
       
       <div class="brand">
-        <a href="/" class="avatar waves-effect waves-circle waves-light">
+        <a href="http://blog.minecup.cc/" class="avatar waves-effect waves-circle waves-light">
           <img src="/img/avatar.jpg">
         </a>
         <hgroup class="introduce">
@@ -216,7 +216,7 @@
 <h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>普通物品部分是一个多重背包，令f[i][j]表示前$i$件物品，用容量$j$获得的最大价值，列出dp方程：</p>
 <script type="math/tex; mode=display">f[i][j]=\max(f[i-1][j-k*V_i]+k*W_i)</script><p>时间复杂度$O(N^2C)$,无法满足题目要求，考虑单调队列优化。</p>
 <p>经过观察，我们发现转移只发生在$j$在模$V_i$意义下相同的状态之间，所以把状态按照$j$模$V_i$的值分组，令$x=j%V_i$,dp方程可以改写成这样：</p>
-<script type="math/tex; mode=display">f[i][j]=\max_{k\leq \frac{j-x}{V_i}}\{f[i-1][k*V_i+x]+(\frac{j-x}{V_i}-k)*W_i\}</script><p>（实还应当加入$D_i$的限制，但出于公式间接考虑略去了这部分。）</p>
+<script type="math/tex; mode=display">f[i][j]=\max_{k\leq \frac{j-x}{V_i}}\{f[i-1][k*V_i+x]+(\frac{j-x}{V_i}-k)*W_i\}</script><p>（其实还应当加入$D_i$的限制，但出于公式简洁考虑略去了这部分。）</p>
 <p>把$k*W_i$提出来</p>
 <script type="math/tex; mode=display">f[i][j]=\max_{k\leq \frac{j-x}{V_i}}(f[i-1][k*V_i+x]+\frac{j-x}{V_i}*W_i)+k*W_i</script><p>max里的部分可以用单调队列优化。</p>
 <p>因为这题$m$很小，第二部分直接用朴素方法就可以了。</p>
@@ -227,7 +227,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2018-07-23T12:05:36.887Z" itemprop="dateUpdated">2018-07-23 20:05:36</time>
+    最后更新时间：<time datetime="2018-07-25T10:34:30.703Z" itemprop="dateUpdated">2018-07-25 18:34:30</time>
 </span><br>
 
 
@@ -326,16 +326,6 @@
         <footer class="footer">
     
     <div class="top">
-        
-            <p>
-    <span>Links：</span>
-    
-    <span class="blogroll-item">
-        <a href="https://www.lujingtao.com" target="_blank">HOME</a>
-    </span>
-    
-</p>
-
         
     </div>
     
