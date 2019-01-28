@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    
+    
+    <title>「BZOJ2730」[HNOI2012]矿场搭建 | Cupcake | 所有命运赠送的礼物，早已在暗中标好了价格。</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.3.2">
+    
+    <script type="text/javascript">
+        // Data Center
+        var DC = {
+            reward:	false,
+            lv: JSON.parse('{"enable":true,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
+            g: JSON.parse('{"enable":false,"lazy":true,"owner":"codefine","repo":"gitment","oauth":{"client_id":null,"client_secret":null},"perPage":10}'),
+            d: JSON.parse('{"app_id":null}')
+        };
+    </script>
+    <script type="text/javascript">
+        window.lazyScripts=[];
+    </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+
+<body>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      
+      <img src="/img/brand.jpg" class="brand-bg">
+      
+      <div class="brand">
+        <a href="http://blog.minecup.cc/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Cupcake</h5>
+          <a href="mailto:2573865855@qq.com" title="2573865855@qq.com" class="mail">
+            
+              <span>2</span>
+            
+              <span>5</span>
+            
+              <span>7</span>
+            
+              <span>3</span>
+            
+              <span>8</span>
+            
+              <span>6</span>
+            
+              <span>5</span>
+            
+              <span>8</span>
+            
+              <span>5</span>
+            
+              <span>5</span>
+            
+              <span>@</span>
+            
+              <span>q</span>
+            
+              <span>q</span>
+            
+              <span>.</span>
+            
+              <span>c</span>
+            
+              <span>o</span>
+            
+              <span>m</span>
+            
+          </a>
+        </hgroup>
+        
+        <ul class="menu-link">
+          
+              <li>
+                <a href="https://github.com/Cupcake416" target="_blank">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </li>
+            
+        </ul>
+        
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                HOME
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                ARCHIVES
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/about"  >
+                <i class="icon icon-lg icon-user"></i>
+                ABOUT
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/friends"  >
+                <i class="icon icon-lg icon-users"></i>
+                FRIENDS
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row clearfix">
+        <a href="javascript:;" class="header-icon pull-left waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <span>「BZOJ2730」[HNOI2012]矿场搭建</span>
+            
+        </div>
+        
+        <a href="javascript:;" id="site_search_btn" class="header-icon pull-right waves-effect waves-circle waves-light">
+            <i class="icon icon-lg icon-search"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+    <!--<img src="/img/1.JPG" class="header-bg">-->
+    <div class="header-bg">;
+    <div class="container fade-scale">
+        <h1 class="title">「BZOJ2730」[HNOI2012]矿场搭建</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-03-06T01:33:39.000Z" itemprop="datePublished" class="page-time">
+  2018-03-06
+</time>
+
+
+            
+        </h5>
+        
+    </div>
+    
+
+</header>
+
+<div id="site_search">
+    <div class="search-title clearfix">
+        <span class="pull-left">
+          <i class="icon icon-lg icon-search"></i>
+        </span>
+        <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control pull-left"/>
+        <a href="javascript:;" class="close pull-right waves-effect waves-circle waves-light">
+          <i class="icon icon-lg icon-close"></i>
+        </a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<div class="container body-wrap">
+    <article id="post-「BZOJ2730」-HNOI2012-矿场搭建"
+  class="post-article article-type-post" itemprop="blogPost">
+    <div class="post-card">
+        <h1 class="post-card-title">「BZOJ2730」[HNOI2012]矿场搭建</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-03-06 09:33:39" datetime="2018-03-06T01:33:39.000Z"  itemprop="datePublished">2018-03-06</time>
+
+            
+
+
+            
+	<span id="/2018/03/06/「BZOJ2730」-HNOI2012-矿场搭建/" class="leancloud_visitors" data-flag-title="「BZOJ2730」[HNOI2012]矿场搭建" title="「BZOJ2730」[HNOI2012]矿场搭建">
+		
+			<i class="icon icon-eye"></i>
+		
+		<span class="leancloud-visitors-count"></span>
+	</span>
+ 
+
+            
+
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            
+            <h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给一个无向图，需要在某些点设立出口，使无论删除图中的哪个点，图中的每个联通块中至少存在一个出口，求至少设置几个出口，以及设置的方案总数。<br><a id="more"></a></p>
+<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>如果删除的点不是割点，那么只要设置两个及以上的出口就一定能出去。</p>
+<p>如果是割点的话就会分离出一个联通块。</p>
+<p>因此我们求出所有割点，dfs一遍整个图。</p>
+<p>一个联通块会被分离当且仅当它周围只有一个割点，在这种联通块里设立一个出口即可。</p>
+<p>注意处理特殊情况，当一个图中没有割点时要设立两个出口。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">510</span>;</span><br><span class="line"><span class="keyword">int</span> n,T,ans1,cnt,siz,dfn[N],low[N],timer;</span><br><span class="line">ll ans2;</span><br><span class="line"><span class="keyword">bool</span> vis[N],iscut[N],viscut[N];</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Edge</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> from,to;</span><br><span class="line">    Edge(<span class="keyword">int</span> _from=<span class="number">0</span>,<span class="keyword">int</span> _to=<span class="number">0</span>):from(_from),to(_to)&#123;&#125;</span><br><span class="line">&#125;edge[N&lt;&lt;<span class="number">1</span>];</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;point[N];</span><br><span class="line"><span class="keyword">int</span> edge_tot;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">add_edge</span><span class="params">(<span class="keyword">int</span> f,<span class="keyword">int</span> t)</span></span>&#123;</span><br><span class="line">    edge[edge_tot]=Edge(f,t);</span><br><span class="line">    point[f].push_back(edge_tot++);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> ff[N];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">tarjan</span><span class="params">(<span class="keyword">int</span> k,<span class="keyword">int</span> fa)</span></span>&#123;</span><br><span class="line">    ff[k]=fa;</span><br><span class="line">    <span class="keyword">int</span> child=<span class="number">0</span>;</span><br><span class="line">    dfn[k]=low[k]=++timer;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=point[k].size()<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">        Edge&amp; e=edge[point[k][i]];</span><br><span class="line">        <span class="keyword">if</span>(!dfn[e.to])&#123;</span><br><span class="line">            child++;</span><br><span class="line">            tarjan(e.to,k);</span><br><span class="line">            low[k]=min(low[k],low[e.to]);</span><br><span class="line">            <span class="keyword">if</span>(low[e.to]&gt;=dfn[k]) iscut[k]=<span class="number">1</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(dfn[e.to]&lt;dfn[k]&amp;&amp;e.to!=fa) low[k]=min(dfn[e.to],low[k]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(!fa&amp;&amp;child==<span class="number">1</span>) iscut[k]=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> k,<span class="keyword">int</span> pre)</span></span>&#123;</span><br><span class="line">    vis[k]=<span class="number">1</span>,siz++;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;point[k].size();i++)&#123;</span><br><span class="line">        Edge&amp; e=edge[point[k][i]];</span><br><span class="line">        <span class="keyword">if</span>(iscut[e.to]&amp;&amp;!viscut[e.to]) viscut[e.to]=<span class="number">1</span>,cnt++;</span><br><span class="line">        <span class="keyword">if</span>(iscut[e.to]||pre==e.to||vis[e.to])<span class="keyword">continue</span>;</span><br><span class="line">        dfs(e.to,k);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t1,t2,tot=<span class="number">0</span>;</span><br><span class="line">    ans1=edge_tot=<span class="number">0</span>,ans2=<span class="number">1</span>,timer=<span class="number">0</span>;</span><br><span class="line">    T++;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;t1,&amp;t2);add_edge(t1,t2);add_edge(t2,t1);tot=max(tot,max(t1,t2));&#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=tot;i++) <span class="keyword">if</span>(!dfn[i]) tarjan(i,<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">memset</span>(vis,<span class="number">0</span>,<span class="keyword">sizeof</span>(vis));</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=tot;i++) <span class="keyword">if</span>(!iscut[i]&amp;&amp;!vis[i])&#123;</span><br><span class="line">        cnt=siz=<span class="number">0</span>;</span><br><span class="line">        <span class="built_in">memset</span>(viscut,<span class="number">0</span>,<span class="keyword">sizeof</span>(viscut));</span><br><span class="line">        dfs(i,<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">if</span>(!cnt) ans1+=<span class="number">2</span>,ans2*=siz*(siz<span class="number">-1</span>)/<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(cnt==<span class="number">1</span>) ans1++,ans2*=siz;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Case %d: %d %lld\n"</span>,T,ans1,ans2);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=tot;i++) point[i].clear();</span><br><span class="line">    <span class="built_in">memset</span>(iscut,<span class="number">0</span>,<span class="keyword">sizeof</span>(iscut));<span class="built_in">memset</span>(dfn,<span class="number">0</span>,<span class="keyword">sizeof</span>(dfn));</span><br><span class="line">    <span class="built_in">memset</span>(low,<span class="number">0</span>,<span class="keyword">sizeof</span>(low));</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n)!=EOF)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!n) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        solve();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        </div>
+        
+<blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-01-28T05:11:57.221Z" itemprop="dateUpdated">2019-01-28 13:11:57</time>
+</span><br>
+
+
+        
+        转载注明出处，原文地址：<a href="/2018/03/06/「BZOJ2730」-HNOI2012-矿场搭建/" target="_blank" rel="external">http://blog.minecup.cc/2018/03/06/「BZOJ2730」-HNOI2012-矿场搭建/</a>
+        
+    </div>
+    <footer>
+        <a href="http://blog.minecup.cc">
+            <img src="/img/avatar.jpg" alt="Cupcake">
+            Cupcake
+        </a>
+    </footer>
+</blockquote>
+
+        
+        <div class="post-footer">
+            
+            <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.minecup.cc/2018/03/06/「BZOJ2730」-HNOI2012-矿场搭建/&title=《「BZOJ2730」[HNOI2012]矿场搭建》 — Cupcake&pic=http://blog.minecup.cc/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.minecup.cc/2018/03/06/「BZOJ2730」-HNOI2012-矿场搭建/&title=《「BZOJ2730」[HNOI2012]矿场搭建》 — Cupcake&source=题目大意给一个无向图，需要在某些点设立出口，使无论删除图中的哪个点，图中的每个联通块中至少存在一个出口，求至少设置几个出口，以及设置的方案总数。" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+        </div>
+        
+            
+
+
+        
+    </div>
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="prev">
+      <a href="/2018/03/06/「POJ3352」Road Construction/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">「POJ3352」Road Construction</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="next">
+      <a href="/2018/03/05/「BZOJ3572」-HNOI2014-世界树/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">「BZOJ3572」[HNOI2014]世界树</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+    
+    
+        <aside class="post-widget">
+            <nav class="post-toc-wrap" id="post-toc">
+                <strong>目录</strong>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题目大意"><span class="post-toc-number">1.</span> <span class="post-toc-text">题目大意</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解析"><span class="post-toc-number">2.</span> <span class="post-toc-text">解析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码"><span class="post-toc-number">3.</span> <span class="post-toc-text">代码</span></a></li></ol>
+            </nav>
+            <div class="toc-bar"><div>
+        </aside>
+    
+</article>
+
+</div>
+
+        <footer class="footer">
+    
+    <div class="top">
+        
+    </div>
+    
+    <div class="bottom">
+        <p>
+            <span>
+                Cupcake &copy; 2018 - 2019
+            </span>
+        		
+           	
+            
+            
+            
+            
+
+            
+                
+<span class="site-uv" title="总访客量">
+    <i class="icon icon-user"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_uv"></i>
+</span>
+
+
+<span class="site-pv" title="总访问量">
+    <i class="icon icon-eye"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_pv"></i>
+</span>
+
+            
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.minecup.cc/2018/03/06/「BZOJ2730」-HNOI2012-矿场搭建/&title=《「BZOJ2730」[HNOI2012]矿场搭建》 — Cupcake&pic=http://blog.minecup.cc/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.minecup.cc/2018/03/06/「BZOJ2730」-HNOI2012-矿场搭建/&title=《「BZOJ2730」[HNOI2012]矿场搭建》 — Cupcake&source=题目大意给一个无向图，需要在某些点设立出口，使无论删除图中的哪个点，图中的每个联通块中至少存在一个出口，求至少设置几个出口，以及设置的方案总数。" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACwklEQVR42u3aQW4jMQwEQP//015gT7sI7HSTkpNDzcmYxLZqAkhMk49HfD3/Xu/v/Hv/65V82vv7r77xwIWHh4c3Wvr7ZX19nXzlq3e9v5M80GTNeHh4eLd5yeKSTTznJQdD8iC+seDh4eH9KC8vefMFJQ80+SkeHh7e7+Tl/+9vwo72NR4eHt5P8ZIwog1nZyFvW9Yfy1rw8PDwYt7tjfvG64v9PTw8PLxFVz3ffNuf5gX6ZrV4eHh4N3hJ82kTtm7CjgQZHRh4eHh4R3ltfLCPCdqmWvuY/ruDh4eHd5mXb/H5EGr7+7NU4eXn4OHh4X2E127fp+KDthKuZyLw8PDwjvJmg02bRv4mDi4eMR4eHt413qxczj/hbLJahCN4eHh413izjbhtR7URRt4qe7lCPDw8vAu8Wat+NkqVl8Wz9dTBBB4eHt6I1745b0G1zbPZgEI9dIWHh4e35s2K3Vnx3ZbpedPrWJiLh4eHV/LaSnxfQM+aW228i4eHh3eW1w5d5Q2wWYSRrycKkfHw8PA+wnvEVztidSxcyItsPDw8vGu8tpzNt/u8MZanr0WcgYeHh3eBt4kVoqJ21ELLY4thlw8PDw/vKO8ZXzkmD2qTx9HOBuDh4eHd4+VLyYcMNstt23JRfw8PDw/vEG8T154dw5pt/av4Aw8PD+8C7/1hkMcTydGSRyQrBh4eHt6a18apeaOrHZmaRRjR6BUeHh7eNV4bm26K7wNFcHJU4OHh4R3lPcsrb3TlY1Jts60II/Dw8PAu8NptdxPUtqXwrNBfnSp4eHh4MW82XNU2rtp3JSFIdDDg4eHhXePlTf1ZIz+Phmfn2DdZCx4eHt6P8maPoI1uN6EwHh4e3u/htZv7ZnyqHUfAw8PD+zxvthG3B0kSVbTl9TffhYeHh3eBt2mA5aHD7DeTP0byLjw8PLxDvD/OpX2CtYJWNAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+    
+    <!-- main-js -->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/plugins/fastclick.js?v=1.3.2"></script>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script type="text/javascript" src="/js/method.js?v=1.3.2"></script>
+<script type="text/javascript" src="/js/blog.js?v=1.3.2"></script>
+
+<!-- third-party -->
+
+
+
+
+
+<script type="text/javascript" src="/js/plugins/local_search.js?v=1.3.2"></script>
+<script type="text/javascript">
+	var search_path = "search.xml";
+	if (search_path.length === 0) {
+		search_path = "search.xml";
+	}
+	var path = "/" + search_path;
+	searchFunc(path, "local-search-input", "local-search-result");
+</script>
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+
+
+
+<script type="text/javascript" src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script type="text/javascript" src="/js/plugins/leancloud_visitors.js?v=1.3.2"></script>
+
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+    <script type="text/javascript"> 
+/* 鼠标特效 */ 
+var a_idx = 0; 
+jQuery(document).ready(function($) { 
+    $("body").click(function(e) { 
+        var a = new Array("富强","民主","和谐","文明","自由","平等","公正","法治","爱国","敬业","诚信","友善"); 
+        var $i = $("<span/>").text(a[a_idx]); 
+        a_idx = (a_idx + 1) % a.length; 
+        var x = e.pageX, 
+        y = e.pageY; 
+        $i.css({ 
+            "z-index": 999999999999999999999999999999999999999999999999999999999999999999999, 
+            "top": y - 20, 
+            "left": x, 
+            "position": "absolute", 
+            "font-weight": "bold", 
+            "color": "rgb(72,85,137)" 
+        }); 
+        $("body").append($i); 
+        $i.animate({ 
+            "top": y - 180, 
+            "opacity": 0 
+        }, 
+        1500, 
+        function() { 
+            $i.remove(); 
+        }); 
+    }); 
+}); 
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>
