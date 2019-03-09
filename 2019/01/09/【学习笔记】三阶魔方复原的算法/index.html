@@ -212,30 +212,30 @@
         <div class="post-content" id="post-content" itemprop="postContent">
             
             <p>最近我们班里不知怎么的流行起了魔方，所以就突发奇想想学学复原魔方的算法。</p>
-<h2 id="魔方公式表示"><a href="#魔方公式表示" class="headerlink" title="魔方公式表示"></a>魔方公式表示</h2><p>首先来复习一下拧魔方的公式<br><figure class="image-box">
-                <img src="https://i.loli.net/2019/03/09/5c83c89ae02f8.gif" alt="notation1.gif" title="" class="">
-                <p>notation1.gif</p>
+<h2 id="魔方公式表示"><a href="#魔方公式表示" class="headerlink" title="魔方公式表示"></a>魔方公式表示</h2><p>首先来复习一下魔方的公式<br><figure class="image-box">
+                <img src="https://i.loli.net/2019/03/09/5c83c89ae02f8.gif" alt="魔方小站上扒下来的，我第一次学魔方的网站，好怀念啊" title="" class="">
+                <p>魔方小站上扒下来的，我第一次学魔方的网站，好怀念啊</p>
             </figure></p>
 <h2 id="魔方的表示"><a href="#魔方的表示" class="headerlink" title="魔方的表示"></a>魔方的表示</h2><p>我们要如何表示一个魔方呢？一个最直观的想法是记录六个面54个色块的颜色，但实际上这是一种十分低效的方法，因为有些色块的相邻关系是确定的。事实上我们复原魔方时也是一层一层的复原，而不是孤立的关注单个面的颜色，受到这个的启发，我们可以用各个棱块和角块的位置和方向来表示一个魔方。</p>
 <h3 id="角块方向的表示"><a href="#角块方向的表示" class="headerlink" title="角块方向的表示"></a>角块方向的表示</h3><figure class="image-box">
-                <img src="https://i.loli.net/2019/03/09/5c83cfc97f750.png" alt="corner-0-150x150.png" title="" class="">
-                <p>corner-0-150x150.png</p>
+                <img src="https://i.loli.net/2019/03/09/5c83cfc97f750.png" alt="角块0" title="" class="">
+                <p>角块0</p>
             </figure>
 <figure class="image-box">
-                <img src="https://i.loli.net/2019/03/09/5c83cfc9813fb.png" alt="corner-1-150x150.png" title="" class="">
-                <p>corner-1-150x150.png</p>
+                <img src="https://i.loli.net/2019/03/09/5c83cfc9813fb.png" alt="角块1" title="" class="">
+                <p>角块1</p>
             </figure>
 <figure class="image-box">
-                <img src="https://i.loli.net/2019/03/09/5c83cfc9989b9.png" alt="corner-2-150x150.png" title="" class="">
-                <p>corner-2-150x150.png</p>
+                <img src="https://i.loli.net/2019/03/09/5c83cfc9989b9.png" alt="角块2" title="" class="">
+                <p>角块2</p>
             </figure>
 <p>角方块有三个面，其中必有一个面为顶面或底面，这里我们取蓝色为底面，绿色为顶面，那么我们就可以这么规定一个角块的方向：先把一个角块像上图一样对准我们，并以蓝色或绿色为顶面，上图中三种角块的方向分别为0，1，2。</p>
 <h3 id="棱块方向的表示"><a href="#棱块方向的表示" class="headerlink" title="棱块方向的表示"></a>棱块方向的表示</h3><p>棱块方向的表示会比角块更复杂一点，因为棱块只有两个面，所以只选取一对面作为基准面是不够的。我们选择白黄作为第二基准面，也就是说，当棱块含有蓝或绿时以蓝绿为基准，否则以白黄为基准。<br>接下来规定方向，当棱块的基准色在基准面上是方向为0，否则为1。<br><figure class="image-box">
-                <img src="https://i.loli.net/2019/03/09/5c83cfc999805.png" alt="edge-1-150x150.png" title="" class="">
-                <p>edge-1-150x150.png</p>
+                <img src="https://i.loli.net/2019/03/09/5c83cfc999805.png" alt="棱块0" title="" class="">
+                <p>棱块0</p>
             </figure><br><figure class="image-box">
-                <img src="https://i.loli.net/2019/03/09/5c83d1d969ef4.png" alt="edge-0-150x150.png" title="" class="">
-                <p>edge-0-150x150.png</p>
+                <img src="https://i.loli.net/2019/03/09/5c83d1d969ef4.png" alt="棱块1" title="" class="">
+                <p>棱块1</p>
             </figure><br>如上图，第一幅图片中棱块方向都为0，第二幅中都为0。</p>
 <h2 id="Kociemba-算法"><a href="#Kociemba-算法" class="headerlink" title="Kociemba 算法"></a>Kociemba 算法</h2><p>首先我们要找到魔方的一种中间状态：仅仅通过 U、D、L2、R2、F2、B2 这几种旋转就可以将魔方复原的状态。也就是不允许 90∘ 地旋转魔方的前后左右这四个面。这种状态有什么特点呢？<br>我们刚刚限定的旋转方法，是不会改变棱块和角块的方向的。那也就是说，在这种中间状态下，魔方的棱块和角块的方向应该都是 0，这是因为目标状态的魔方如此。除此之外，魔方中间层的四个棱块必然也在中间层。<br>换句话说，我们要找的中间状态要满足下面两个条件：<br>1.魔方的棱块和角块的方向都是 0<br>2.魔方中间层的四个棱块都在中间层</p>
 <p>到这里，这个算法就自然的分为了两个部分：<br>1.把魔方旋转到中间状态<br>2.把魔方从中间状态复原</p>
@@ -249,7 +249,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-03-09T15:03:03.056Z" itemprop="dateUpdated">2019-03-09 23:03:03</time>
+    最后更新时间：<time datetime="2019-03-09T15:08:11.003Z" itemprop="dateUpdated">2019-03-09 23:08:11</time>
 </span><br>
 
 
@@ -510,6 +510,21 @@ jQuery(document).ready(function($) {
         }); 
     }); 
 }); 
-</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
