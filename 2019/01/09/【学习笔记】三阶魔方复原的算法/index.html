@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    
+    
+    <title>【学习笔记】三阶魔方复原的算法 | Cupcake | 所有命运赠送的礼物，早已在暗中标好了价格。</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.3.2">
+    
+    <script type="text/javascript">
+        // Data Center
+        var DC = {
+            reward:	false,
+            lv: JSON.parse('{"enable":true,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
+            g: JSON.parse('{"enable":false,"lazy":true,"owner":"codefine","repo":"gitment","oauth":{"client_id":null,"client_secret":null},"perPage":10}'),
+            d: JSON.parse('{"app_id":null}')
+        };
+    </script>
+    <script type="text/javascript">
+        window.lazyScripts=[];
+    </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
+</head>
+
+
+<body>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      
+      <img src="/img/brand.jpg" class="brand-bg">
+      
+      <div class="brand">
+        <a href="http://blog.minecup.cc/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Cupcake</h5>
+          <a href="mailto:2573865855@qq.com" title="2573865855@qq.com" class="mail">
+            
+              <span>2</span>
+            
+              <span>5</span>
+            
+              <span>7</span>
+            
+              <span>3</span>
+            
+              <span>8</span>
+            
+              <span>6</span>
+            
+              <span>5</span>
+            
+              <span>8</span>
+            
+              <span>5</span>
+            
+              <span>5</span>
+            
+              <span>@</span>
+            
+              <span>q</span>
+            
+              <span>q</span>
+            
+              <span>.</span>
+            
+              <span>c</span>
+            
+              <span>o</span>
+            
+              <span>m</span>
+            
+          </a>
+        </hgroup>
+        
+        <ul class="menu-link">
+          
+              <li>
+                <a href="https://github.com/Cupcake416" target="_blank">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </li>
+            
+        </ul>
+        
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                HOME
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                ARCHIVES
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/about"  >
+                <i class="icon icon-lg icon-user"></i>
+                ABOUT
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/friends"  >
+                <i class="icon icon-lg icon-users"></i>
+                FRIENDS
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row clearfix">
+        <a href="javascript:;" class="header-icon pull-left waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <span>【学习笔记】三阶魔方复原的算法</span>
+            
+        </div>
+        
+        <a href="javascript:;" id="site_search_btn" class="header-icon pull-right waves-effect waves-circle waves-light">
+            <i class="icon icon-lg icon-search"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+    <!--<img src="/img/1.JPG" class="header-bg">-->
+    <div class="header-bg">;
+    <div class="container fade-scale">
+        <h1 class="title">【学习笔记】三阶魔方复原的算法</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-01-09T13:03:07.000Z" itemprop="datePublished" class="page-time">
+  2019-01-09
+</time>
+
+
+            
+        </h5>
+        
+    </div>
+    
+
+</header>
+
+<div id="site_search">
+    <div class="search-title clearfix">
+        <span class="pull-left">
+          <i class="icon icon-lg icon-search"></i>
+        </span>
+        <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control pull-left"/>
+        <a href="javascript:;" class="close pull-right waves-effect waves-circle waves-light">
+          <i class="icon icon-lg icon-close"></i>
+        </a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<div class="container body-wrap">
+    <article id="post-【学习笔记】三阶魔方复原的算法"
+  class="post-article article-type-post" itemprop="blogPost">
+    <div class="post-card">
+        <h1 class="post-card-title">【学习笔记】三阶魔方复原的算法</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-01-09 21:03:07" datetime="2019-01-09T13:03:07.000Z"  itemprop="datePublished">2019-01-09</time>
+
+            
+
+
+            
+	<span id="/2019/01/09/【学习笔记】三阶魔方复原的算法/" class="leancloud_visitors" data-flag-title="【学习笔记】三阶魔方复原的算法" title="【学习笔记】三阶魔方复原的算法">
+		
+			<i class="icon icon-eye"></i>
+		
+		<span class="leancloud-visitors-count"></span>
+	</span>
+ 
+
+            
+
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            
+            <p>最近我们班里不知怎么的流行起了魔方，所以就突发奇想想学学复原魔方的算法。</p>
+<h2 id="魔方公式表示"><a href="#魔方公式表示" class="headerlink" title="魔方公式表示"></a>魔方公式表示</h2><p>首先来复习一下拧魔方的公式<br><figure class="image-box">
+                <img src="https://i.loli.net/2019/03/09/5c83c89ae02f8.gif" alt="notation1.gif" title="" class="">
+                <p>notation1.gif</p>
+            </figure></p>
+<h2 id="魔方的表示"><a href="#魔方的表示" class="headerlink" title="魔方的表示"></a>魔方的表示</h2><p>我们要如何表示一个魔方呢？一个最直观的想法是记录六个面54个色块的颜色，但实际上这是一种十分低效的方法，因为有些色块的相邻关系是确定的。事实上我们复原魔方时也是一层一层的复原，而不是孤立的关注单个面的颜色，受到这个的启发，我们可以用各个棱块和角块的位置和方向来表示一个魔方。</p>
+<h3 id="角块方向的表示"><a href="#角块方向的表示" class="headerlink" title="角块方向的表示"></a>角块方向的表示</h3><figure class="image-box">
+                <img src="https://i.loli.net/2019/03/09/5c83cfc97f750.png" alt="corner-0-150x150.png" title="" class="">
+                <p>corner-0-150x150.png</p>
+            </figure>
+<figure class="image-box">
+                <img src="https://i.loli.net/2019/03/09/5c83cfc9813fb.png" alt="corner-1-150x150.png" title="" class="">
+                <p>corner-1-150x150.png</p>
+            </figure>
+<figure class="image-box">
+                <img src="https://i.loli.net/2019/03/09/5c83cfc9989b9.png" alt="corner-2-150x150.png" title="" class="">
+                <p>corner-2-150x150.png</p>
+            </figure>
+<p>角方块有三个面，其中必有一个面为顶面或底面，这里我们取蓝色为底面，绿色为顶面，那么我们就可以这么规定一个角块的方向：先把一个角块像上图一样对准我们，并以蓝色或绿色为顶面，上图中三种角块的方向分别为0，1，2。</p>
+<h3 id="棱块方向的表示"><a href="#棱块方向的表示" class="headerlink" title="棱块方向的表示"></a>棱块方向的表示</h3><p>棱块方向的表示会比角块更复杂一点，因为棱块只有两个面，所以只选取一对面作为基准面是不够的。我们选择白黄作为第二基准面，也就是说，当棱块含有蓝或绿时以蓝绿为基准，否则以白黄为基准。<br>接下来规定方向，当棱块的基准色在基准面上是方向为0，否则为1。<br><figure class="image-box">
+                <img src="https://i.loli.net/2019/03/09/5c83cfc999805.png" alt="edge-1-150x150.png" title="" class="">
+                <p>edge-1-150x150.png</p>
+            </figure><br><figure class="image-box">
+                <img src="https://i.loli.net/2019/03/09/5c83d1d969ef4.png" alt="edge-0-150x150.png" title="" class="">
+                <p>edge-0-150x150.png</p>
+            </figure><br>如上图，第一幅图片中棱块方向都为0，第二幅中都为0。</p>
+<h2 id="Kociemba-算法"><a href="#Kociemba-算法" class="headerlink" title="Kociemba 算法"></a>Kociemba 算法</h2><p>首先我们要找到魔方的一种中间状态：仅仅通过 U、D、L2、R2、F2、B2 这几种旋转就可以将魔方复原的状态。也就是不允许 90∘ 地旋转魔方的前后左右这四个面。这种状态有什么特点呢？<br>我们刚刚限定的旋转方法，是不会改变棱块和角块的方向的。那也就是说，在这种中间状态下，魔方的棱块和角块的方向应该都是 0，这是因为目标状态的魔方如此。除此之外，魔方中间层的四个棱块必然也在中间层。<br>换句话说，我们要找的中间状态要满足下面两个条件：<br>1.魔方的棱块和角块的方向都是 0<br>2.魔方中间层的四个棱块都在中间层</p>
+<p>到这里，这个算法就自然的分为了两个部分：<br>1.把魔方旋转到中间状态<br>2.把魔方从中间状态复原</p>
+<p>如何将魔方旋转到中间状态呢？我们使用 IDA* 来进行搜索。对于启发函数，分别针对角块的方向（一共 38 种可能）、棱块的方向（一共 28 种可能）、中间层棱块的位置及方向（一共 A412×24 种可能）计算复原它们所需要的最少步数。</p>
+<p>然后是第二步，经过计算我们发现这一步的状态只有 8!×8!×4!=3.9×10^10 种可能，我们用 IDA* 来进行搜索，当我们设计启发函数的时候分别针对角块（一共 8! 种可能）、顶层和底层的棱块（一共 8! 种可能）、中间层的棱块（一共 4! 种可能）计算复原它们所需要的最少步数（这可以直接进行搜索），之后的启发函数就是这三者的最大值。</p>
+<p>有些情况下，我们第一步就还原了魔方，那么这个结果是最优的。</p>
+
+        </div>
+        
+<blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-03-09T15:03:03.056Z" itemprop="dateUpdated">2019-03-09 23:03:03</time>
+</span><br>
+
+
+        
+        转载注明出处，原文地址：<a href="/2019/01/09/【学习笔记】三阶魔方复原的算法/" target="_blank" rel="external">http://blog.minecup.cc/2019/01/09/【学习笔记】三阶魔方复原的算法/</a>
+        
+    </div>
+    <footer>
+        <a href="http://blog.minecup.cc">
+            <img src="/img/avatar.jpg" alt="Cupcake">
+            Cupcake
+        </a>
+    </footer>
+</blockquote>
+
+        
+        <div class="post-footer">
+            
+            <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.minecup.cc/2019/01/09/【学习笔记】三阶魔方复原的算法/&title=《【学习笔记】三阶魔方复原的算法》 — Cupcake&pic=http://blog.minecup.cc/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.minecup.cc/2019/01/09/【学习笔记】三阶魔方复原的算法/&title=《【学习笔记】三阶魔方复原的算法》 — Cupcake&source=一只蒟蒻" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+        </div>
+        
+            
+
+
+        
+    </div>
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="next">
+      <a href="/2018/03/20/「UOJ34」多项式乘法/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">「UOJ34」多项式乘法</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+    
+    
+        <aside class="post-widget">
+            <nav class="post-toc-wrap" id="post-toc">
+                <strong>目录</strong>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#魔方公式表示"><span class="post-toc-number">1.</span> <span class="post-toc-text">魔方公式表示</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#魔方的表示"><span class="post-toc-number">2.</span> <span class="post-toc-text">魔方的表示</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#角块方向的表示"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">角块方向的表示</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#棱块方向的表示"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">棱块方向的表示</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Kociemba-算法"><span class="post-toc-number">3.</span> <span class="post-toc-text">Kociemba 算法</span></a></li></ol>
+            </nav>
+            <div class="toc-bar"><div>
+        </aside>
+    
+</article>
+
+</div>
+
+        <footer class="footer">
+    
+    <div class="top">
+        
+    </div>
+    
+    <div class="bottom">
+        <p>
+            <span>
+                Cupcake &copy; 2018 - 2019
+            </span>
+        		
+           	
+            
+            
+            
+            
+
+            
+                
+<span class="site-uv" title="总访客量">
+    <i class="icon icon-user"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_uv"></i>
+</span>
+
+
+<span class="site-pv" title="总访问量">
+    <i class="icon icon-eye"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_pv"></i>
+</span>
+
+            
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.minecup.cc/2019/01/09/【学习笔记】三阶魔方复原的算法/&title=《【学习笔记】三阶魔方复原的算法》 — Cupcake&pic=http://blog.minecup.cc/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.minecup.cc/2019/01/09/【学习笔记】三阶魔方复原的算法/&title=《【学习笔记】三阶魔方复原的算法》 — Cupcake&source=一只蒟蒻" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACrUlEQVR42u3aQW7kMAwEwPz/09nrApvxdIviZg7lU+AEkksGSIb011d8ff9zPf/N33eSlV/t0q52eOHh4eGNH/3V0snGz/ic93ysyTPj4eHhbfOSjScBOkkn+cEVh4iHh4f3AbwzTJ5+JsU6Hh4e3ifzJkE8b1L8WmLAw8PDC3htyD4Dz1sSi70WPDw8vJjXlsif8PPKfA8PDw9vPFVvk0QSptsgnieDH1bGw8PDW+BNWgP5EOts5cknXHh4eHjbvOeQnTcU2pq2bTS0LWY8PDy83+K15eyktZEfd5028PDw8P4LLwnKbVKZH25SiOPh4eFt89rBUhuaJy2MvKR+897w8PDwLvHyoH/2QO1D5wOwKJnh4eHhLfDOPr1KFmo/HcjXbMt6PDw8vLu8fLO8EdAW0GdFebQOHh4e3gLvOeBONsvbr20GqwtoPDw8vAXevAmbF+J5CmnTwJsXg4eHh7fAm4ys2lZv26idvAY8PDy8Dd5zSd22bu9+jtAO4d5kPDw8PLxLvPbhkt8m288HaUWhj4eHh7fAa4f0SbshaUYkaaDdBQ8PD2+Pd/av/lnQv3b2+SvBw8PDW+OdhekkVZyVxW0D9+UueHh4eMu8eedz/jHBZOT2wzp4eHh4C7x5s6BtH7T7rqQHPDw8vIXCum3gnhXcz/fPjqbIWnh4eHhrvPbTq7OGwq053puSGg8PD+8qL28f5MmjHYklyaM9UDw8PLy7vO/yasvovMjOg35xKHh4eHgLvDbgPpfdbQOiXWd+rHh4eHi3eLeSQQLL2xnzsRweHh7eNi9prSbU5JgmTYo8geHh4eF9Gu9sDDZ/9DZR4eHh4X0Ory3N5wX6YfLAw8PDW+PlpXA+pjor0Ns2RPRlBB4eHt5VXlvOti3Xdqg2SWCHFx4eHl56/w+QhBbb6hkNsgAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+    
+    <!-- main-js -->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/plugins/fastclick.js?v=1.3.2"></script>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script type="text/javascript" src="/js/method.js?v=1.3.2"></script>
+<script type="text/javascript" src="/js/blog.js?v=1.3.2"></script>
+
+<!-- third-party -->
+
+
+
+
+
+<script type="text/javascript" src="/js/plugins/local_search.js?v=1.3.2"></script>
+<script type="text/javascript">
+	var search_path = "search.xml";
+	if (search_path.length === 0) {
+		search_path = "search.xml";
+	}
+	var path = "/" + search_path;
+	searchFunc(path, "local-search-input", "local-search-result");
+</script>
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+
+
+
+<script type="text/javascript" src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script type="text/javascript" src="/js/plugins/leancloud_visitors.js?v=1.3.2"></script>
+
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+    <script type="text/javascript"> 
+/* 鼠标特效 */ 
+var a_idx = 0; 
+jQuery(document).ready(function($) { 
+    $("body").click(function(e) { 
+        var a = new Array("富强","民主","和谐","文明","自由","平等","公正","法治","爱国","敬业","诚信","友善"); 
+        var $i = $("<span/>").text(a[a_idx]); 
+        a_idx = (a_idx + 1) % a.length; 
+        var x = e.pageX, 
+        y = e.pageY; 
+        $i.css({ 
+            "z-index": 999999999999999999999999999999999999999999999999999999999999999999999, 
+            "top": y - 20, 
+            "left": x, 
+            "position": "absolute", 
+            "font-weight": "bold", 
+            "color": "rgb(72,85,137)" 
+        }); 
+        $("body").append($i); 
+        $i.animate({ 
+            "top": y - 180, 
+            "opacity": 0 
+        }, 
+        1500, 
+        function() { 
+            $i.remove(); 
+        }); 
+    }); 
+}); 
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>
